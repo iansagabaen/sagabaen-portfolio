@@ -196,8 +196,12 @@ export default function App() {
               Now I'm building products on the side and mentoring designers who are figuring out their next move. The two feel more connected than they might look.
             </p>
 
-            <p className="text-base text-stone-500 leading-relaxed max-w-2xl mb-14">
+            <p className="text-base text-stone-500 leading-relaxed max-w-2xl mb-8">
               At Google, I lead UX on systems that touch tens of millions of people. What keeps me going is the same thing it's always been: understanding genuinely hard problems and sharing what I learn as broadly as I can.
+            </p>
+
+            <p className="text-base text-stone-400 leading-relaxed max-w-2xl mb-14">
+              I also speak — at conferences, universities, and workshops. I've lectured through Google Tech Exchange, led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work — not just talking about it — I'm available.
             </p>
 
             <div className="flex flex-wrap gap-4">
