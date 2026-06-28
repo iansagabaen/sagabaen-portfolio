@@ -203,7 +203,16 @@ export default function App() {
               </p>
 
               <p className="text-base text-stone-400 leading-relaxed mb-14">
-                I also speak — at conferences, universities, and workshops. I've lectured through Google Tech Exchange, led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work — not just talking about it — I'm available.
+                I also speak — at conferences, universities, and workshops. I've lectured through{' '}
+                <a
+                  href="https://buildyourfuture.withgoogle.com/programs/tech-exchange"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
+                >
+                  Google Tech Exchange
+                </a>
+                , led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work — not just talking about it — I'm available.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -229,27 +238,27 @@ export default function App() {
               transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="relative hidden lg:flex justify-center items-center"
             >
-              <div className="relative w-full max-w-sm aspect-[3/4] overflow-hidden">
+              <div className="relative w-full max-w-sm aspect-[3/4] overflow-hidden rounded-3xl" style={{ background: 'rgb(88 88 88)' }}>
                 {/* Soft vignette edges — blends portrait into background */}
                 <div className="absolute inset-0 z-10 rounded-3xl"
                   style={{
-                    boxShadow: 'inset 0 0 80px 40px rgb(12 10 9)' // stone-950 approximation
+                    boxShadow: 'inset 0 0 80px 40px rgb(88 88 88)'
                   }}
                 />
                 <img
                   src="/images/headshot-ian.jpg"
                   alt="Ian Sagabaen"
                   className="w-full h-full object-cover object-top"
-                  style={{ opacity: 0.75, filter: 'contrast(0.95) brightness(0.9)' }}
+                  style={{ opacity: 0.9, filter: 'contrast(0.95) brightness(0.95)' }}
                 />
                 {/* Bottom gradient fade */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-stone-950 to-transparent z-10" />
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 z-10" style={{ background: 'linear-gradient(to top, rgb(88 88 88), transparent)' }} />
                 {/* Top gradient fade */}
-                <div className="absolute top-0 left-0 right-0 h-1/5 bg-gradient-to-b from-stone-950 to-transparent z-10" />
+                <div className="absolute top-0 left-0 right-0 h-1/5 z-10" style={{ background: 'linear-gradient(to bottom, rgb(88 88 88), transparent)' }} />
                 {/* Left edge fade */}
-                <div className="absolute top-0 left-0 bottom-0 w-1/4 bg-gradient-to-r from-stone-950 to-transparent z-10" />
+                <div className="absolute top-0 left-0 bottom-0 w-1/4 z-10" style={{ background: 'linear-gradient(to right, rgb(88 88 88), transparent)' }} />
                 {/* Right edge fade */}
-                <div className="absolute top-0 right-0 bottom-0 w-1/4 bg-gradient-to-l from-stone-950 to-transparent z-10" />
+                <div className="absolute top-0 right-0 bottom-0 w-1/4 z-10" style={{ background: 'linear-gradient(to left, rgb(88 88 88), transparent)' }} />
               </div>
             </motion.div>
           </div>
@@ -310,12 +319,6 @@ export default function App() {
               tags={['Security', 'Architecture', 'Admin UX']}
             />
             <StoryCard
-              eyebrow="AI · 2024–Present"
-              title="Agentic Enterprise Support"
-              body="Working on what it looks like when AI does more than answer questions. Instead of a chatbot that says 'learn more,' the system anticipates admin problems before they file a ticket. This work was accepted to CHI 2026, which I'm still a little surprised about."
-              tags={['AI', 'Research', 'Proactive Systems']}
-            />
-            <StoryCard
               eyebrow="Sales Tools · 2023–2024"
               title="Enterprise Sales Platform"
               body="Unified three separate internal tools that sales teams were cobbling together into workarounds. The challenge wasn't the interface design — it was figuring out which workflows actually mattered and which ones only existed because no one had questioned them yet."
@@ -324,7 +327,7 @@ export default function App() {
             <StoryCard
               eyebrow="Support · 2018–2023"
               title="Enterprise Support at Scale"
-              body="Led design for the unified support experience across Google Cloud and Workspace. Customers like Verizon, managing thousands of users, needed something that could handle their scale without requiring them to become Google experts just to get help."
+              body="Led design for the unified support experience across Google Cloud and Workspace. Supporting enterprise teams managing thousands of users, the challenge was building something that could handle their scale without requiring them to become Google experts just to get help."
               tags={['Support', 'Enterprise', 'Multi-product']}
             />
             <StoryCard
@@ -438,15 +441,16 @@ export default function App() {
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover object-center"
+            style={{ opacity: 0.45 }}
           />
           {/* Dark gradient overlay — heavier at top and bottom for text legibility */}
-          <div className="absolute inset-0 bg-gradient-to-b from-stone-950/92 via-stone-950/80 to-stone-950/92" />
+          <div className="absolute inset-0 bg-gradient-to-b from-stone-950/90 via-stone-950/70 to-stone-950/90" />
           {/* Extra left-side overlay for text column readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-stone-950/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/50 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto">
-          <SectionHeader label="Community & Knowledge" title="The work I can't not do" />
+          <SectionHeader label="Community & Knowledge" title="Where I actually spend my time" />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
@@ -458,7 +462,16 @@ export default function App() {
                   For the past several years I've been an art docent at an elementary school, which means going into classrooms and talking about art history in ways that seven-year-olds can actually track. It's the most challenging teaching I do, and I love it. You can't hide behind jargon with kids. You have to actually know what you're talking about and then find the version of it that lands.
                 </p>
                 <p>
-                  I bring the same instinct to mentoring designers. I've worked with people through ADPList and internal Google programs, and the common thread is that most people don't need more information — they need someone to help them figure out what they already know and what question to ask next.
+                  I bring the same instinct to mentoring designers. I've worked with people through{' '}
+                  <a
+                    href="https://adplist.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
+                  >
+                    ADPList
+                  </a>{' '}
+                  and internal Google programs, and the common thread is that most people don't need more information — they need someone to help them figure out what they already know and what question to ask next.
                 </p>
                 <p>
                   Some of this work has grown into something more structured. Through{' '}
@@ -490,10 +503,12 @@ export default function App() {
                       Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.
                     </p>
                     <a
-                      href="#contact"
+                      href="https://thesagafoundation.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-amber-400 hover:text-amber-300 transition-colors"
                     >
-                      See curriculum <ArrowUpRight size={12} />
+                      View at The Saga Foundation <ArrowUpRight size={12} />
                     </a>
                   </div>
                 </motion.div>
@@ -525,7 +540,7 @@ export default function App() {
                       Community Building
                     </h4>
                     <p className="text-sm text-stone-300 leading-relaxed">
-                      ERGs, collaborative workshops, spaces where people can experiment without being experts first. I've always tried to lower the entry cost.
+                      ERGs, collaborative workshops, spaces where people can experiment without being experts first. You don't need permission or credentials to participate — that's always been the point.
                     </p>
                   </div>
                 </motion.div>
