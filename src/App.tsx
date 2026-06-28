@@ -229,16 +229,13 @@ export default function App() {
               transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="relative hidden lg:flex justify-center items-center"
             >
-              {/* Headshot placeholder — replace src with /images/headshot-ian.jpg once saved */}
-              <div className="relative w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden border border-stone-700/40 bg-stone-800/40 flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/8 to-rose-500/5" />
-                <div className="text-center p-8 relative z-10">
-                  <div className="w-20 h-20 rounded-full bg-amber-400/10 border border-amber-400/20 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-light text-amber-400/60">IS</span>
-                  </div>
-                  <p className="text-stone-500 text-sm">Headshot coming soon</p>
-                  <p className="text-stone-600 text-xs mt-1">Replace with /images/headshot-ian.jpg</p>
-                </div>
+              <div className="relative w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
+                <img
+                  src="/images/headshot-ian.jpg"
+                  alt="Ian Sagabaen"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/20 via-transparent to-transparent" />
               </div>
               {/* Decorative ring */}
               <div className="absolute inset-0 -m-4 rounded-[2rem] border border-amber-400/5 pointer-events-none" />
@@ -514,17 +511,17 @@ export default function App() {
                   </p>
                 </div>
 
-                {/* Group photo — CSU Long Beach placeholder / group event */}
+                {/* CSU Long Beach speaking photo */}
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
                   <img
-                    src="/images/group-tech-event.png"
-                    alt="Group photo from a tech community event"
+                    src="/images/speaking-csu-longbeach.jpg"
+                    alt="Ian speaking at CSU Long Beach"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
                   <p className="absolute bottom-3 left-3 text-[10px] text-stone-300 font-medium leading-snug">
-                    Tech Community
+                    CSU Long Beach
                   </p>
                 </div>
               </div>
