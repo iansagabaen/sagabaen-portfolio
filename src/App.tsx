@@ -499,17 +499,9 @@ export default function App() {
                     <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
                       Workshops & Content
                     </h4>
-                    <p className="text-sm text-stone-300 leading-relaxed mb-3">
+                    <p className="text-sm text-stone-300 leading-relaxed">
                       Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.
                     </p>
-                    <a
-                      href="https://thesagafoundation.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-amber-400 hover:text-amber-300 transition-colors"
-                    >
-                      View at The Saga Foundation <ArrowUpRight size={12} />
-                    </a>
                   </div>
                 </motion.div>
 
