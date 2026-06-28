@@ -135,7 +135,7 @@ export default function App() {
             </div>
             <div>
               <span className="text-sm font-semibold tracking-tight text-stone-100 block">Ian Sagabaen</span>
-              <span className="text-[10px] text-stone-500 tracking-wide">rhymes with Lion</span>
+              <span className="text-[10px] text-stone-300 tracking-wide">rhymes with Lion</span>
             </div>
           </motion.div>
 
@@ -150,7 +150,7 @@ export default function App() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-xs font-semibold uppercase tracking-widest text-stone-500 hover:text-amber-400 transition-colors duration-200"
+                className="text-xs font-semibold uppercase tracking-widest text-stone-100 hover:text-amber-400 transition-colors duration-200"
               >
                 {item.label}
               </a>
@@ -159,7 +159,7 @@ export default function App() {
 
           <a
             href="mailto:iansagabaen@gmail.com"
-            className="px-5 py-2 border border-amber-400/40 text-amber-400 text-xs font-bold rounded-full hover:bg-amber-400 hover:text-stone-950 transition-all duration-200"
+            className="px-5 py-2 border border-amber-400/70 text-amber-400 text-xs font-bold rounded-full hover:bg-amber-400 hover:text-stone-950 transition-all duration-200"
           >
             Let's Talk
           </a>
