@@ -169,56 +169,81 @@ export default function App() {
       {/* ── Hero ── */}
       <section className="relative pt-44 pb-36 px-6 overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 32 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
-          >
-            <span className="inline-block px-4 py-1.5 bg-amber-400/10 text-amber-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-8 border border-amber-400/20">
-              Designer · Builder · Mentor
-            </span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Text column */}
+            <motion.div
+              initial={{ opacity: 0, y: 32 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
+            >
+              <span className="inline-block px-4 py-1.5 bg-amber-400/10 text-amber-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-8 border border-amber-400/20">
+                Designer · Builder · Mentor
+              </span>
 
-            <div className="mb-3">
-              <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-stone-100 max-w-4xl">
-                Ian Sagabaen
-              </h1>
-              <p className="text-lg text-amber-400/70 font-light tracking-wide mt-2 mb-8">
-                (rhymes with Lion)
+              <div className="mb-3">
+                <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-stone-100">
+                  Ian Sagabaen
+                </h1>
+                <p className="text-lg text-amber-400/70 font-light tracking-wide mt-2 mb-8">
+                  (rhymes with Lion)
+                </p>
+              </div>
+
+              <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-stone-100">
+                I've spent the last decade at Google learning how to simplify{' '}
+                <span className="text-amber-400">enterprise chaos.</span>
+              </h2>
+
+              <p className="text-xl text-stone-400 font-light leading-relaxed mb-4">
+                Now I'm building products on the side and mentoring designers who are figuring out their next move. The two feel more connected than they might look.
               </p>
-            </div>
 
-            <h2 className="text-3xl md:text-5xl font-light tracking-tight leading-[1.1] mb-10 text-stone-100 max-w-4xl">
-              I've spent the last decade at Google learning how to simplify{' '}
-              <span className="text-amber-400">enterprise chaos.</span>
-            </h2>
+              <p className="text-base text-stone-500 leading-relaxed mb-8">
+                At Google, I lead UX on systems that touch tens of millions of people. What keeps me going is the same thing it's always been: understanding genuinely hard problems and sharing what I learn as broadly as I can.
+              </p>
 
-            <p className="text-xl text-stone-400 font-light leading-relaxed max-w-2xl mb-4">
-              Now I'm building products on the side and mentoring designers who are figuring out their next move. The two feel more connected than they might look.
-            </p>
+              <p className="text-base text-stone-400 leading-relaxed mb-14">
+                I also speak — at conferences, universities, and workshops. I've lectured through Google Tech Exchange, led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work — not just talking about it — I'm available.
+              </p>
 
-            <p className="text-base text-stone-500 leading-relaxed max-w-2xl mb-8">
-              At Google, I lead UX on systems that touch tens of millions of people. What keeps me going is the same thing it's always been: understanding genuinely hard problems and sharing what I learn as broadly as I can.
-            </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#work"
+                  className="px-6 py-3 bg-amber-400 text-stone-950 text-sm font-bold rounded-full hover:bg-amber-300 transition-colors duration-200"
+                >
+                  See my work
+                </a>
+                <a
+                  href="#contact"
+                  className="px-6 py-3 border border-stone-700 text-stone-300 text-sm font-medium rounded-full hover:border-amber-400/50 hover:text-amber-400 transition-all duration-200"
+                >
+                  Get in touch
+                </a>
+              </div>
+            </motion.div>
 
-            <p className="text-base text-stone-400 leading-relaxed max-w-2xl mb-14">
-              I also speak — at conferences, universities, and workshops. I've lectured through Google Tech Exchange, led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work — not just talking about it — I'm available.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#work"
-                className="px-6 py-3 bg-amber-400 text-stone-950 text-sm font-bold rounded-full hover:bg-amber-300 transition-colors duration-200"
-              >
-                See my work
-              </a>
-              <a
-                href="#contact"
-                className="px-6 py-3 border border-stone-700 text-stone-300 text-sm font-medium rounded-full hover:border-amber-400/50 hover:text-amber-400 transition-all duration-200"
-              >
-                Get in touch
-              </a>
-            </div>
-          </motion.div>
+            {/* Headshot column */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+              className="relative hidden lg:flex justify-center items-center"
+            >
+              {/* Headshot placeholder — replace src with /images/headshot-ian.jpg once saved */}
+              <div className="relative w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden border border-stone-700/40 bg-stone-800/40 flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/8 to-rose-500/5" />
+                <div className="text-center p-8 relative z-10">
+                  <div className="w-20 h-20 rounded-full bg-amber-400/10 border border-amber-400/20 mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl font-light text-amber-400/60">IS</span>
+                  </div>
+                  <p className="text-stone-500 text-sm">Headshot coming soon</p>
+                  <p className="text-stone-600 text-xs mt-1">Replace with /images/headshot-ian.jpg</p>
+                </div>
+              </div>
+              {/* Decorative ring */}
+              <div className="absolute inset-0 -m-4 rounded-[2rem] border border-amber-400/5 pointer-events-none" />
+            </motion.div>
+          </div>
         </div>
 
         {/* Subtle warm glow */}
@@ -453,20 +478,55 @@ export default function App() {
               </div>
             </div>
 
-            {/* Image placeholder — warm toned, spacious */}
+            {/* Speaking photo gallery */}
             <motion.div
               {...fadeUp}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="relative aspect-[4/5] bg-stone-800/40 border border-stone-700/40 rounded-3xl overflow-hidden flex items-center justify-center"
+              className="flex flex-col gap-4"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-rose-500/5" />
-              <div className="text-center p-8 relative z-10">
-                <p className="text-stone-500 text-sm leading-relaxed">
-                  Photo or illustration coming here
+              {/* Hero speaking photo — SJSU (top, full width) */}
+              <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
+                <img
+                  src="/images/speaking-sjsu.png"
+                  alt="Ian speaking at San Jose State University UX·UI Association career talk"
+                  className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
+                <p className="absolute bottom-4 left-5 text-xs text-stone-300 font-medium">
+                  San Jose State University · UX·UI Association
                 </p>
-                <p className="text-stone-600 text-xs mt-2">
-                  Classroom · Muay Thai · Studio
-                </p>
+              </div>
+
+              {/* Two smaller photos side by side */}
+              <div className="grid grid-cols-2 gap-4">
+                {/* Google Sunnyvale */}
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
+                  <img
+                    src="/images/speaking-google-sunnyvale.png"
+                    alt="Ian at Google Sunnyvale speaking to high school students"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
+                  <p className="absolute bottom-3 left-3 text-[10px] text-stone-300 font-medium leading-snug">
+                    Google Sunnyvale
+                  </p>
+                </div>
+
+                {/* Group photo — CSU Long Beach placeholder / group event */}
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
+                  <img
+                    src="/images/group-tech-event.png"
+                    alt="Group photo from a tech community event"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
+                  <p className="absolute bottom-3 left-3 text-[10px] text-stone-300 font-medium leading-snug">
+                    Tech Community
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
