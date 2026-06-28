@@ -181,28 +181,28 @@ export default function App() {
               </span>
 
               <div className="mb-3">
-                <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-stone-100">
+                <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-white">
                   Ian Sagabaen
                 </h1>
-                <p className="text-lg text-amber-400/70 font-light tracking-wide mt-2 mb-8">
+                <p className="text-lg text-amber-400 font-light tracking-wide mt-2 mb-8">
                   (rhymes with Lion)
                 </p>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-stone-100">
+              <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white">
                 I've spent the last decade at Google learning how to simplify{' '}
                 <span className="text-amber-400">enterprise chaos.</span>
               </h2>
 
-              <p className="text-xl text-stone-400 font-light leading-relaxed mb-4">
+              <p className="text-xl text-stone-100 font-light leading-relaxed mb-4">
                 Now I'm building products on the side and mentoring designers who are figuring out their next move. The two feel more connected than they might look.
               </p>
 
-              <p className="text-base text-stone-500 leading-relaxed mb-8">
+              <p className="text-base text-stone-200 leading-relaxed mb-8">
                 At Google, I lead UX on systems that touch tens of millions of people. What keeps me going is the same thing it's always been: understanding genuinely hard problems and sharing what I learn as broadly as I can.
               </p>
 
-              <p className="text-base text-stone-400 leading-relaxed mb-14">
+              <p className="text-base text-stone-200 leading-relaxed mb-14">
                 I also speak — at conferences, universities, and workshops. I've lectured through{' '}
                 <a
                   href="https://buildyourfuture.withgoogle.com/programs/tech-exchange"
@@ -238,7 +238,7 @@ export default function App() {
               transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="relative hidden lg:flex justify-center items-center"
             >
-              <div className="relative w-full max-w-sm aspect-[3/4] overflow-hidden rounded-3xl" style={{ background: '#686861' }}>
+              <div className="relative w-full max-w-lg aspect-[3/4] overflow-hidden rounded-3xl" style={{ background: '#686861' }}>
                 {/* Soft vignette edges — blends portrait into background */}
                 <div className="absolute inset-0 z-10 rounded-3xl"
                   style={{
