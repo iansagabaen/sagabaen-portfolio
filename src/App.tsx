@@ -167,7 +167,7 @@ export default function App() {
       </nav>
 
       {/* ── Hero ── */}
-      <section className="relative pt-44 pb-36 px-6 overflow-hidden">
+      <section className="relative pt-44 pb-36 px-6 overflow-hidden" style={{ backgroundColor: '#686861' }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Text column */}
@@ -238,11 +238,11 @@ export default function App() {
               transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="relative hidden lg:flex justify-center items-center"
             >
-              <div className="relative w-full max-w-sm aspect-[3/4] overflow-hidden rounded-3xl" style={{ background: 'rgb(88 88 88)' }}>
+              <div className="relative w-full max-w-sm aspect-[3/4] overflow-hidden rounded-3xl" style={{ background: '#686861' }}>
                 {/* Soft vignette edges — blends portrait into background */}
                 <div className="absolute inset-0 z-10 rounded-3xl"
                   style={{
-                    boxShadow: 'inset 0 0 80px 40px rgb(88 88 88)'
+                    boxShadow: 'inset 0 0 80px 40px #686861'
                   }}
                 />
                 <img
@@ -252,13 +252,13 @@ export default function App() {
                   style={{ opacity: 0.9, filter: 'contrast(0.95) brightness(0.95)' }}
                 />
                 {/* Bottom gradient fade */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 z-10" style={{ background: 'linear-gradient(to top, rgb(88 88 88), transparent)' }} />
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 z-10" style={{ background: 'linear-gradient(to top, #686861, transparent)' }} />
                 {/* Top gradient fade */}
-                <div className="absolute top-0 left-0 right-0 h-1/5 z-10" style={{ background: 'linear-gradient(to bottom, rgb(88 88 88), transparent)' }} />
+                <div className="absolute top-0 left-0 right-0 h-1/5 z-10" style={{ background: 'linear-gradient(to bottom, #686861, transparent)' }} />
                 {/* Left edge fade */}
-                <div className="absolute top-0 left-0 bottom-0 w-1/4 z-10" style={{ background: 'linear-gradient(to right, rgb(88 88 88), transparent)' }} />
+                <div className="absolute top-0 left-0 bottom-0 w-1/4 z-10" style={{ background: 'linear-gradient(to right, #686861, transparent)' }} />
                 {/* Right edge fade */}
-                <div className="absolute top-0 right-0 bottom-0 w-1/4 z-10" style={{ background: 'linear-gradient(to left, rgb(88 88 88), transparent)' }} />
+                <div className="absolute top-0 right-0 bottom-0 w-1/4 z-10" style={{ background: 'linear-gradient(to left, #686861, transparent)' }} />
               </div>
             </motion.div>
           </div>
