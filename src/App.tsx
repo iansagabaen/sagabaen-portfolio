@@ -222,23 +222,35 @@ export default function App() {
               </div>
             </motion.div>
 
-            {/* Headshot column */}
+            {/* Headshot column — blended into background */}
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="relative hidden lg:flex justify-center items-center"
             >
-              <div className="relative w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
+              <div className="relative w-full max-w-sm aspect-[3/4] overflow-hidden">
+                {/* Soft vignette edges — blends portrait into background */}
+                <div className="absolute inset-0 z-10 rounded-3xl"
+                  style={{
+                    boxShadow: 'inset 0 0 80px 40px rgb(12 10 9)' // stone-950 approximation
+                  }}
+                />
                 <img
                   src="/images/headshot-ian.jpg"
                   alt="Ian Sagabaen"
                   className="w-full h-full object-cover object-top"
+                  style={{ opacity: 0.75, filter: 'contrast(0.95) brightness(0.9)' }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/20 via-transparent to-transparent" />
+                {/* Bottom gradient fade */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-stone-950 to-transparent z-10" />
+                {/* Top gradient fade */}
+                <div className="absolute top-0 left-0 right-0 h-1/5 bg-gradient-to-b from-stone-950 to-transparent z-10" />
+                {/* Left edge fade */}
+                <div className="absolute top-0 left-0 bottom-0 w-1/4 bg-gradient-to-r from-stone-950 to-transparent z-10" />
+                {/* Right edge fade */}
+                <div className="absolute top-0 right-0 bottom-0 w-1/4 bg-gradient-to-l from-stone-950 to-transparent z-10" />
               </div>
-              {/* Decorative ring */}
-              <div className="absolute inset-0 -m-4 rounded-[2rem] border border-amber-400/5 pointer-events-none" />
             </motion.div>
           </div>
         </div>
@@ -305,8 +317,8 @@ export default function App() {
             />
             <StoryCard
               eyebrow="Sales Tools · 2023–2024"
-              title="Cloud Connect"
-              body="Unified three separate internal tools that sales teams were duct-taping together into workarounds. The challenge wasn't the interface design, it was figuring out which workflows actually mattered and which ones only existed because no one had questioned them yet."
+              title="Enterprise Sales Platform"
+              body="Unified three separate internal tools that sales teams were cobbling together into workarounds. The challenge wasn't the interface design — it was figuring out which workflows actually mattered and which ones only existed because no one had questioned them yet."
               tags={['Internal Tools', 'Sales', 'Systems Thinking']}
             />
             <StoryCard
@@ -418,64 +430,125 @@ export default function App() {
       </section>
 
       {/* ── Teaching & Mentorship ── */}
-      <section id="teaching" className="py-32 px-6 bg-stone-900/60">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader label="Community & Knowledge" title="Teaching is the part I care most about" />
+      <section id="teaching" className="relative py-32 px-6 overflow-hidden">
+        {/* Google Sunnyvale photo as full-width background */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/speaking-google-sunnyvale.png"
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover object-center"
+          />
+          {/* Dark gradient overlay — heavier at top and bottom for text legibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-stone-950/92 via-stone-950/80 to-stone-950/92" />
+          {/* Extra left-side overlay for text column readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-stone-950/40 to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <SectionHeader label="Community & Knowledge" title="The work I can't not do" />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <div className="space-y-6 text-stone-400 leading-relaxed mb-12">
-                <p className="text-lg text-stone-300">
+              <div className="space-y-6 text-stone-300 leading-relaxed mb-12">
+                <p className="text-lg text-stone-200">
                   I grew up being taught by people who were generous with what they knew. I don't take that for granted, and I try to pay it forward as directly as I can.
                 </p>
                 <p>
                   For the past several years I've been an art docent at an elementary school, which means going into classrooms and talking about art history in ways that seven-year-olds can actually track. It's the most challenging teaching I do, and I love it. You can't hide behind jargon with kids. You have to actually know what you're talking about and then find the version of it that lands.
                 </p>
                 <p>
-                  I bring the same instinct to mentoring designers. I've worked with people through ADPList and internal Google programs, and the common thread is that most people don't need more information, they need someone to help them figure out what they already know and what question to ask next. That's what I try to do.
+                  I bring the same instinct to mentoring designers. I've worked with people through ADPList and internal Google programs, and the common thread is that most people don't need more information — they need someone to help them figure out what they already know and what question to ask next.
                 </p>
                 <p>
-                  I've also been building out content and workshops around the design-to-founder path, because I think there are a lot of designers who have the instincts to build products but feel like that world isn't meant for them. I want to be useful to those people specifically.
+                  Some of this work has grown into something more structured. Through{' '}
+                  <a
+                    href="https://thesagafoundation.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
+                  >
+                    The Saga Foundation
+                  </a>
+                  , I'm building the infrastructure to do this at a larger scale — scholarships, mentorship pipelines, and resources for people who don't have easy access to the design world. It's the next chapter of this work.
                 </p>
               </div>
 
-              <div className="space-y-6">
-                {[
-                  {
-                    label: 'Art Docent',
-                    desc: "Teaching art history in elementary school classrooms. The constraint of making it land with kids makes me a sharper teacher everywhere else."
-                  },
-                  {
-                    label: 'Design Mentorship',
-                    desc: 'Working with emerging designers through ADPList and Google programs. Focus on career decisions, not just craft.'
-                  },
-                  {
-                    label: 'Community Building',
-                    desc: "ERGs, collaborative workshops, spaces where people can experiment without being experts first. I've always tried to lower the entry cost."
-                  },
-                  {
-                    label: 'Workshops & Content',
-                    desc: 'Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.'
-                  }
-                ].map((item) => (
-                  <motion.div
-                    key={item.label}
-                    {...fadeUp}
-                    className="flex gap-4"
-                  >
-                    <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
-                    <div>
-                      <h4 className="text-sm font-bold uppercase tracking-widest text-stone-200 mb-1">
-                        {item.label}
-                      </h4>
-                      <p className="text-sm text-stone-400 leading-relaxed">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
+              {/* Teaching subsections — reordered */}
+              <div className="space-y-8">
+                {/* 1. Workshops & Content */}
+                <motion.div
+                  {...fadeUp}
+                  className="flex gap-4"
+                >
+                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
+                      Workshops & Content
+                    </h4>
+                    <p className="text-sm text-stone-300 leading-relaxed mb-3">
+                      Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.
+                    </p>
+                    <a
+                      href="#contact"
+                      className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-amber-400 hover:text-amber-300 transition-colors"
+                    >
+                      See curriculum <ArrowUpRight size={12} />
+                    </a>
+                  </div>
+                </motion.div>
+
+                {/* 2. Design Mentorship */}
+                <motion.div
+                  {...fadeUp}
+                  className="flex gap-4"
+                >
+                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
+                      Design Mentorship
+                    </h4>
+                    <p className="text-sm text-stone-300 leading-relaxed">
+                      Working with emerging designers through ADPList and Google programs. Focus on career decisions, not just craft.
+                    </p>
+                  </div>
+                </motion.div>
+
+                {/* 3. Community Building */}
+                <motion.div
+                  {...fadeUp}
+                  className="flex gap-4"
+                >
+                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
+                      Community Building
+                    </h4>
+                    <p className="text-sm text-stone-300 leading-relaxed">
+                      ERGs, collaborative workshops, spaces where people can experiment without being experts first. I've always tried to lower the entry cost.
+                    </p>
+                  </div>
+                </motion.div>
+
+                {/* 4. Art Docent */}
+                <motion.div
+                  {...fadeUp}
+                  className="flex gap-4"
+                >
+                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
+                      Art Docent
+                    </h4>
+                    <p className="text-sm text-stone-300 leading-relaxed">
+                      Teaching art history in elementary school classrooms. The constraint of making it land with kids makes me a sharper teacher everywhere else.
+                    </p>
+                  </div>
+                </motion.div>
               </div>
             </div>
 
-            {/* Speaking photo gallery */}
+            {/* Speaking photo — SJSU + CSU Long Beach */}
             <motion.div
               {...fadeUp}
               transition={{ delay: 0.2, duration: 0.6 }}
@@ -495,35 +568,18 @@ export default function App() {
                 </p>
               </div>
 
-              {/* Two smaller photos side by side */}
-              <div className="grid grid-cols-2 gap-4">
-                {/* Google Sunnyvale */}
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
-                  <img
-                    src="/images/speaking-google-sunnyvale.png"
-                    alt="Ian at Google Sunnyvale speaking to high school students"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
-                  <p className="absolute bottom-3 left-3 text-[10px] text-stone-300 font-medium leading-snug">
-                    Google Sunnyvale
-                  </p>
-                </div>
-
-                {/* CSU Long Beach speaking photo */}
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
-                  <img
-                    src="/images/speaking-csu-longbeach.jpg"
-                    alt="Ian speaking at CSU Long Beach"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
-                  <p className="absolute bottom-3 left-3 text-[10px] text-stone-300 font-medium leading-snug">
-                    CSU Long Beach
-                  </p>
-                </div>
+              {/* CSU Long Beach photo */}
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
+                <img
+                  src="/images/speaking-csu-longbeach.jpg"
+                  alt="Ian speaking at CSU Long Beach"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent" />
+                <p className="absolute bottom-3 left-3 text-[10px] text-stone-300 font-medium leading-snug">
+                  CSU Long Beach
+                </p>
               </div>
             </motion.div>
           </div>
@@ -598,25 +654,25 @@ export default function App() {
               period="2018 — Present"
               company="Google"
               role="UX Design Lead"
-              description="Leading design across Workspace Security, Cloud Sales, and Support. The range has been useful: I've worked on everything from admin dashboards to AI-driven support systems to onboarding flows for customers switching from Microsoft. Each one taught me something different about where complexity comes from and how to reduce it."
+              description="Leading design across Workspace Security, Cloud Sales, and Support — a portfolio that touches 30M+ users across enterprise and government accounts. I've worked on everything from admin dashboards handling thousands of configurations to AI-driven support systems, to onboarding flows for customers migrating from Microsoft. Eight years of this has taught me one consistent thing: complexity usually isn't necessary, it's just inherited."
             />
             <ExperienceItem
               period="2015 — 2016"
               company="Facebook"
               role="Product Design Contractor"
-              description="Short stint that was mostly about learning what shipping at Facebook scale felt like. Fast, high-stakes, humbling. Valuable."
+              description="Spent a year at Facebook shipping consumer features with a 50+ person cross-functional team. The pace was real — high-stakes decisions made fast, with a lot of eyeballs on the outcome. What I actually took away wasn't about speed. It was about how much you can get done when everyone's aligned on what matters. I also learned that 'move fast' only works if the design decisions are already solid."
             />
             <ExperienceItem
               period="2013 — 2015"
               company="SugarSync"
               role="Principal Product Designer"
-              description="Led design for a cloud storage product at a time when most people were still figuring out what cloud storage was. Learned how to make technically complex things feel simple, which turned out to be useful preparation for everything that came after."
+              description="Led product design for a cloud storage platform at a time when most consumers were still skeptical of storing files anywhere other than their hard drive. Shipped the core sharing and sync experience, worked across desktop, web, and mobile, and helped the team find product-market fit with small business users who needed reliable access across devices."
             />
             <ExperienceItem
               period="2008 — 2012"
               company="CompareNetworks"
               role="Senior Graphic Designer"
-              description="Designed for scientific and industrial marketplaces. Not glamorous, but it taught me how to design for audiences that care about accuracy above everything else, which is its own discipline."
+              description="Designed for scientific and industrial B2B marketplaces — buyers who cared about specs and accuracy above everything else. Built and maintained design systems across multiple niche verticals, shipped hundreds of product pages and lead-generation flows, and learned how to design for audiences that distrust anything that looks like marketing. That turned out to be more useful than I expected."
             />
           </div>
         </div>
