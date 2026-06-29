@@ -523,24 +523,43 @@ export default function App() {
         <div className="relative z-10 max-w-6xl mx-auto">
           <SectionHeader label="Values" title="Giving Back" />
 
-          {/* Podcast Feature — Full Width */}
+          {/* Podcast Feature — Full Width Card */}
           <motion.div
             {...fadeUp}
-            className="mb-16"
+            className="mb-16 p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex gap-8 items-start"
           >
+            {/* Podcast Graphic */}
             <a
               href="https://lnkd.in/gtSjPqGK"
               target="_blank"
               rel="noopener noreferrer"
-              className="group block overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300"
+              className="group flex-shrink-0 overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300 w-48 h-48"
             >
               <img
                 src="/images/1747897015528.jpeg"
                 alt="Roots: Episode 89 - International Man of Mystery featuring Ian Sagabaen"
-                className="w-full h-auto object-cover group-hover:opacity-90 transition-opacity duration-300"
+                className="w-full h-full object-cover group-hover:opacity-90 transition-opacity duration-300"
                 loading="lazy"
               />
             </a>
+
+            {/* Text Content */}
+            <div className="flex-1 flex flex-col justify-center">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-3">
+                Featured
+              </p>
+              <p className="text-stone-300 leading-relaxed text-sm mb-4">
+                I was featured on <span className="font-semibold text-stone-100">Roots: A Podcast on Filipino Designers</span>, where I talked about my journey from being the quiet kid from San Jose, to studying abroad in Japan, to building my practice across Silicon Valley tech companies. The episode covers design thinking, overcoming imposter syndrome, and why constraint-based design matters.
+              </p>
+              <a
+                href="https://lnkd.in/gtSjPqGK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-400 hover:text-amber-300 transition-colors text-sm font-medium inline-flex items-center gap-2 w-fit"
+              >
+                Listen now <ArrowUpRight size={14} />
+              </a>
+            </div>
           </motion.div>
 
           {/* Text + Teaching Photos */}
