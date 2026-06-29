@@ -680,7 +680,7 @@ export default function App() {
           >
             {/* Podcast Graphic */}
             <a
-              href="https://lnkd.in/gtSjPqGK"
+              href="https://rootspodcast.design/podcast/iansagabaen"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex-shrink-0 overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300 w-48 h-48"
@@ -704,7 +704,7 @@ export default function App() {
                 </p>
               </div>
               <a
-                href="https://lnkd.in/gtSjPqGK"
+                href="https://rootspodcast.design/podcast/iansagabaen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 bg-amber-400 text-stone-950 text-sm font-bold rounded-full hover:bg-amber-300 transition-colors duration-200 w-fit inline-flex items-center gap-2"
