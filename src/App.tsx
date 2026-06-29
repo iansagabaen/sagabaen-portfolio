@@ -129,9 +129,12 @@ export default function App() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-3"
           >
-            <div className="w-8 h-8 bg-amber-400 rounded-lg flex items-center justify-center text-stone-950 font-bold text-xs">
-              IS
-            </div>
+            <img
+              src="/images/ian icon.svg"
+              alt="Ian Sagabaen"
+              className="w-8 h-8"
+              style={{ filter: 'invert(1)' }}
+            />
             <div>
               <span className="text-sm font-semibold tracking-tight text-stone-100 block">Ian Sagabaen: Designer · Builder · Mentor</span>
             </div>
