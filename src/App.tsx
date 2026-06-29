@@ -407,13 +407,13 @@ export default function App() {
               <h3 className="text-2xl font-medium text-stone-100 mb-6">Localemaps</h3>
               <div className="space-y-4 text-stone-400 leading-relaxed text-sm">
                 <p>
-                  The problem with most "find things near you" apps is that they return everything near you, which is not the same as what you're actually looking for. If you just moved to a new city and you want to find people who are into printmaking, or a gym that does Muay Thai, or a community garden that isn't a six-month waitlist, you're going to do a lot of clicking before you find anything useful.
+                  While traveling globally, I discovered a real market gap: congregation and worship location data exists but is fragmented and nearly impossible to navigate. For someone like me, searching for INC congregations in unfamiliar cities meant scattered Facebook groups, outdated lists, and word-of-mouth. That's a structural problem for diaspora communities worldwide.
                 </p>
                 <p>
-                  Localemaps is an attempt to fix that by being opinionated about filtering. Instead of returning a hundred options, it returns the ten that actually match what you care about. I built the AI layer to do the filtering work rather than putting it on the user, which is the only design decision that makes sense here. Nobody wants to refine their search thirty times.
+                  I built Localemaps initially to solve my own friction. But instead of a static database, I evolved it into a conversational AI bot — recognizing that the use case isn't passive lookup. It's active travel planning, relocation support, and finding communities that understand your specific observances and spiritual calendar. The bot handles context: the difference between a short visit and relocating, between a regular Sunday and Holy Supper season.
                 </p>
                 <p>
-                  I'm building this partly because I've moved enough times to know how long it takes to feel like you belong somewhere, and partly because I think local community is worth caring about even when it's not a hot startup category.
+                  What makes this work isn't the technology. It's the deep community knowledge (1,304 INC locales across continents, understanding worship patterns, trusted access to district and membership networks) combined with the friction-free interface. It's a niche-vertical play that combines missionary strategy with technical execution — identifying an underserved market and using AI to make navigation invisible.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-8">
@@ -440,13 +440,13 @@ export default function App() {
               <h3 className="text-2xl font-medium text-stone-100 mb-6">The Greatest Sign Maker</h3>
               <div className="space-y-4 text-stone-400 leading-relaxed text-sm">
                 <p>
-                  MLB.com dubbed me "The Greatest Sign Maker" for the large-format printed signs I created as a fixture in the Oakland Coliseum bleachers. But this isn't a nostalgia story — it's a design case study in constraint-based thinking.
+                  I won a Twitter contest in 2012 to throw the first pitch at an Oakland A's game. I promised friends I'd get them on TV, so I created professional 20x30 foam core signs designed for broadcast legibility at 400+ feet away. When MLB.com published "Ian Sagabaen has to be greatest sign-maker in MLB history" on their Cut4 blog, the title stuck — and I've leaned into it ever since.
                 </p>
                 <p>
-                  In a stadium environment, you have three seconds to catch a camera operator's eye. That constraint forced a specific design philosophy: massive bold lettering on high-contrast backgrounds, paired with imagery that reads instantly from 400 feet away. I eventually perfected a template because perfection wasn't the goal — communication was.
+                  What matters isn't nostalgia. It's that I recognized a cultural moment and turned it into authentic credibility. 365+ documented snagged baseballs, 13+ years as a season ticket holder, official A's FanFest appearances, and eventually commissioned work directly from the A's organization. The real insight: I didn't approach this as a fan making poster board. I approached it as a designer who understood broadcast camera distance, high-contrast typography, and what content strategy actually means—being niche enough to be clever, but broad enough to resonate.
                 </p>
                 <p>
-                  I bring this exact mindset to enterprise UX. Whether I'm designing for a stadium broadcast or a busy executive's phone screen, the principle is the same: clarity under constraints beats craft every time. The sign that gets on air is more valuable than the perfect painting that gets lost in the crowd.
+                  That same instinct applies to every product I touch. Recognize the moment. Understand your constraints. Build authentic credibility through sustained expertise. The design decisions come from there.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-8">
