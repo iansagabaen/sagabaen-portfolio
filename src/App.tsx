@@ -35,6 +35,7 @@ const SectionHeader = ({ label, title }: { label: string; title: string }) => (
     <motion.h2
       {...fadeUp}
       className="text-4xl md:text-5xl font-light tracking-tight text-stone-100"
+      style={{ fontFamily: "'Cormorant Garamond', serif" }}
     >
       {title}
     </motion.h2>
@@ -113,7 +114,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-stone-950 text-stone-100 font-sans selection:bg-amber-400 selection:text-stone-950">
+    <div className="min-h-screen bg-stone-950 text-stone-100 font-sans selection:bg-amber-400 selection:text-stone-950" style={{ '--serif-font': "'Cormorant Garamond', serif" } as React.CSSProperties}>
 
       {/* ── Navigation ── */}
       <nav
@@ -181,7 +182,7 @@ export default function App() {
               </span>
 
               <div className="mb-3">
-                <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-white">
+                <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Ian Sagabaen
                 </h1>
                 <p className="text-lg text-amber-400 font-light tracking-wide mt-2 mb-8">
@@ -189,7 +190,7 @@ export default function App() {
                 </p>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white">
+              <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 I've spent the last decade at Google learning how to simplify{' '}
                 <span className="text-amber-400">enterprise chaos.</span>
               </h2>
@@ -346,8 +347,11 @@ export default function App() {
             {...fadeUp}
             className="mt-12 p-8 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
           >
-            <p className="text-stone-400 leading-relaxed">
-              <span className="font-medium text-stone-200">What this actually taught me:</span> Working at enterprise scale for this long means I've seen the same problem pattern enough times to recognize it: something that should be straightforward got complicated because each team added their piece without asking whether the whole thing still made sense. Most of my work is figuring out where that happened and making a case for cutting.
+            <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-4">
+              What this actually taught me
+            </p>
+            <p className="text-stone-300 leading-relaxed">
+              Working at enterprise scale for this long means I've seen the same problem pattern enough times to recognize it: something that should be straightforward got complicated because each team added their piece without asking whether the whole thing still made sense. Most of my work is figuring out where that happened and making a case for cutting.
             </p>
           </motion.div>
         </div>
@@ -462,8 +466,11 @@ export default function App() {
             {...fadeUp}
             className="p-8 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
           >
-            <p className="text-stone-400 leading-relaxed">
-              <span className="font-medium text-stone-200">Why I build on the side:</span> Both of these started as problems I had, not market research. I think that's the only honest way to start a product, at least at this stage. The design instincts I've developed at Google do transfer, but the thing that actually changes is how much closer you are to the person you're designing for, because that person is you.
+            <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-4">
+              Why I build on the side
+            </p>
+            <p className="text-stone-300 leading-relaxed">
+              Both of these started as problems I had, not market research. I think that's the only honest way to start a product, at least at this stage. The design instincts I've developed at Google do transfer, but the thing that actually changes is how much closer you are to the person you're designing for, because that person is you.
             </p>
           </motion.div>
         </div>
@@ -520,7 +527,7 @@ export default function App() {
                   >
                     The Saga Foundation
                   </a>
-                  , I'm building the infrastructure to do this at a larger scale — scholarships, mentorship pipelines, and resources for people who don't have easy access to the design world. It's the next chapter of this work.
+                  , I'm building the infrastructure to do this at a larger scale — scholarships, mentorship pipelines, and resources for people who don't have easy access to the design world. There's a specific focus on Filipino and Asian empowerment in tech. I want to be a healthy role model for pinoy UXers and builders who are trying to figure out their path. It's the next chapter of this work.
                 </p>
               </div>
 
@@ -725,7 +732,7 @@ export default function App() {
               period="2015 — 2016"
               company="Facebook"
               role="Product Design Contractor"
-              description="Spent a year at Facebook shipping consumer features with a 50+ person cross-functional team. The pace was real — high-stakes decisions made fast, with a lot of eyeballs on the outcome. What I actually took away wasn't about speed. It was about how much you can get done when everyone's aligned on what matters. I also learned that 'move fast' only works if the design decisions are already solid."
+              description="Worked with engineering-dominant teams designing internal productivity tools and sales infrastructure. Conducted persona research through user interviews, created rapid prototypes and interaction examples for testing with real users. Built a style guide that integrated new components with Facebook's developer library, creating alignment between design and engineering. Also participated in hackathons shipping new tools outside normal scope — rapid iteration without the burden of polish-first thinking."
             />
             <ExperienceItem
               period="2013 — 2015"
@@ -750,19 +757,37 @@ export default function App() {
 
             {/* Education */}
             <div>
-              <SectionHeader label="Foundation" title="Education" />
-              <motion.div
-                {...fadeUp}
-                className="flex gap-6 items-start"
-              >
-                <div className="p-4 bg-stone-800/60 border border-stone-700/40 rounded-2xl">
-                  <GraduationCap size={28} className="text-amber-400" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-medium text-stone-100 mb-1">San Jose State University</h4>
-                  <p className="text-stone-400">BA Graphic Design, Minor in Photography</p>
-                </div>
-              </motion.div>
+              <SectionHeader label="Foundation" title="Education & Growth" />
+              <div className="space-y-8">
+                <motion.div
+                  {...fadeUp}
+                  className="flex gap-6 items-start"
+                >
+                  <div className="p-4 bg-stone-800/60 border border-stone-700/40 rounded-2xl">
+                    <GraduationCap size={28} className="text-amber-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-medium text-stone-100 mb-1">San Jose State University</h4>
+                    <p className="text-stone-400 mb-3">BA Graphic Design, Minor in Photography</p>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  {...fadeUp}
+                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
+                >
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-4">
+                    Study Abroad
+                  </p>
+                  <h4 className="text-lg font-medium text-stone-100 mb-3">Okayama University — Japan (2003–2004)</h4>
+                  <p className="text-stone-300 leading-relaxed text-sm mb-4">
+                    Spent a year in rural Japan as an international student. Volunteered designing the student exchange website and print collateral. But the real education was the language, the culture, and learning how to navigate ambiguity in an unfamiliar environment. I was incredibly shy before this year. I wasn't after.
+                  </p>
+                  <p className="text-stone-400 text-sm">
+                    This experience shaped how I mentor others. I consistently advise mentees to study or work abroad — there's no substitute for the courage you build when you're genuinely lost and have to figure it out.
+                  </p>
+                </motion.div>
+              </div>
             </div>
 
             {/* Contact */}
