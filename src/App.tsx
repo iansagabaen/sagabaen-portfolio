@@ -197,11 +197,11 @@ export default function App() {
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-8">
-                At Google, I lead UX on systems that touch tens of millions of people. But the work that actually sustains me is the other side — building products from scratch, mentoring designers through the hardest decisions, teaching art to kids who remind me why clarity matters. They're not separate careers. They're the same practice applied at different scales.
+                At Google, I lead UX on systems that touch tens of millions of people. But the work that actually sustains me is the other side: building products from scratch, mentoring designers through the hardest decisions, teaching art to kids who remind me why clarity matters. They're not separate careers, just the same practice applied at different scales.
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-8">
-                What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like enterprise work some days, a side project the next, and a conversation about creative risk with someone just starting out. I'm comfortable with that kind of stretch because the underlying thing — the actual work of design — is the same in all of it.
+                What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like enterprise work some days, a side project the next, a conversation about creative risk with someone just starting out. I'm comfortable with that stretch because the underlying thing—the actual work of design—is the same in all of it.
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-14">
@@ -440,10 +440,19 @@ export default function App() {
                   I won a Twitter contest in 2012 to throw the first pitch at an Oakland A's game. I promised friends I'd get them on TV, so I created professional 20x30 foam core signs designed for broadcast legibility at 400+ feet away. When MLB.com published "Ian Sagabaen has to be greatest sign-maker in MLB history" on their Cut4 blog, the title stuck — and I've leaned into it ever since.
                 </p>
                 <p>
-                  What matters isn't nostalgia. It's that I recognized a cultural moment and turned it into authentic credibility. 13+ years as a season ticket holder, official A's FanFest appearances, and eventually commissioned work directly from the A's organization. The real insight: I didn't approach this as a fan making poster board. I approached it as a designer who understood broadcast camera distance, high-contrast typography, and what content strategy actually means—being niche enough to be clever, but broad enough to resonate.
+                  What matters isn't nostalgia. When{' '}
+                  <a
+                    href="https://medium.com/greatest-sign-maker/how-i-came-to-be-the-greatest-sign-maker-838ebff0cc00"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
+                  >
+                    MLB.com featured my signs
+                  </a>
+                  , I realized I'd turned a cultural moment into authentic credibility. 13+ years as a season ticket holder, official A's FanFest appearances, eventually commissioned work directly from the A's. I didn't approach this as a fan making poster board, but as a designer who understood broadcast camera distance, typography, and what real content strategy means: niche enough to be clever, broad enough to resonate.
                 </p>
                 <p>
-                  This same approach—recognize the moment, understand your constraints, build credibility through sustained practice—is what I bring to every product I work on. The difference is scale, not method.
+                  That same instinct—recognizing moments, working within constraints, building credibility through sustained effort—shows up in everything I design. It's the only method I know.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-8">
@@ -464,10 +473,10 @@ export default function App() {
             className="p-8 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
           >
             <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-4">
-              Why I build on the side
+              The common thread
             </p>
             <p className="text-stone-300 leading-relaxed">
-              Both emerged from problems I faced. Market research is useful, but there's no substitute for being your own first user. You stay accountable to what actually works, and you can't hide behind buzzwords when the person who'll suffer from a bad decision is you.
+              Calendar Scout, Localemaps, and every project at Google started the same way: I had a problem. No market research, no strategic planning. Just a friction point I couldn't ignore. Building products I'd actually use keeps me honest in a way that pure strategy never could. It's the same discipline I learned making signs that people actually wanted to watch, the same discipline that makes mentorship work. You show up with something real, and the integrity speaks for itself.
             </p>
           </motion.div>
         </div>
@@ -561,70 +570,61 @@ export default function App() {
                 </a>
               </motion.div>
 
-              {/* Teaching subsections — reordered */}
-              <div className="space-y-8">
+              {/* Teaching subsections — card grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
                 {/* 1. Workshops & Content */}
                 <motion.div
                   {...fadeUp}
-                  className="flex gap-4"
+                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
                 >
-                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
-                      Workshops & Content
-                    </h4>
-                    <p className="text-sm text-stone-300 leading-relaxed">
-                      Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.
-                    </p>
-                  </div>
+                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                    Workshops & Content
+                  </h4>
+                  <p className="text-sm text-stone-300 leading-relaxed">
+                    Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.
+                  </p>
                 </motion.div>
 
                 {/* 2. Design Mentorship */}
                 <motion.div
                   {...fadeUp}
-                  className="flex gap-4"
+                  transition={{ delay: 0.1, duration: 0.6 }}
+                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
                 >
-                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
-                      Design Mentorship
-                    </h4>
-                    <p className="text-sm text-stone-300 leading-relaxed">
-                      Working with emerging designers through ADPList and Google programs. Focus on career decisions, not just craft.
-                    </p>
-                  </div>
+                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                    Design Mentorship
+                  </h4>
+                  <p className="text-sm text-stone-300 leading-relaxed">
+                    Working with emerging designers through ADPList and Google programs. Focus on career decisions, not just craft.
+                  </p>
                 </motion.div>
 
                 {/* 3. Community Building */}
                 <motion.div
                   {...fadeUp}
-                  className="flex gap-4"
+                  transition={{ delay: 0.2, duration: 0.6 }}
+                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
                 >
-                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
-                      Community Building
-                    </h4>
-                    <p className="text-sm text-stone-300 leading-relaxed">
-                      ERGs, collaborative workshops, spaces where people can experiment without being experts first. You don't need permission or credentials to participate — that's always been the point.
-                    </p>
-                  </div>
+                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                    Community Building
+                  </h4>
+                  <p className="text-sm text-stone-300 leading-relaxed">
+                    ERGs, collaborative workshops, spaces where people can experiment without being experts first. You don't need permission or credentials to participate.
+                  </p>
                 </motion.div>
 
                 {/* 4. Art Docent */}
                 <motion.div
                   {...fadeUp}
-                  className="flex gap-4"
+                  transition={{ delay: 0.3, duration: 0.6 }}
+                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
                 >
-                  <div className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
-                  <div>
-                    <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-1">
-                      Art Docent
-                    </h4>
-                    <p className="text-sm text-stone-300 leading-relaxed">
-                      Teaching art history across elementary school district classrooms. The constraint of making it land with kids makes me a sharper teacher everywhere else.
-                    </p>
-                  </div>
+                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                    Art Docent
+                  </h4>
+                  <p className="text-sm text-stone-300 leading-relaxed">
+                    Teaching art history across elementary school district classrooms. The constraint of making it land with kids makes me a sharper teacher everywhere else.
+                  </p>
                 </motion.div>
               </div>
             </div>
