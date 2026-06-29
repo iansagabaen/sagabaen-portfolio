@@ -518,7 +518,7 @@ export default function App() {
             alt=""
             aria-hidden="true"
             className="w-full h-full object-cover object-center"
-            style={{ opacity: 0.45 }}
+            style={{ opacity: 0.65 }}
           />
           {/* Dark gradient overlay - heavier at top and bottom for text legibility */}
           <div className="absolute inset-0 bg-gradient-to-b from-stone-950/90 via-stone-950/70 to-stone-950/90" />
