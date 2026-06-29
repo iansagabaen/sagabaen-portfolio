@@ -195,11 +195,15 @@ export default function App() {
               </h2>
 
               <p className="text-xl text-stone-100 font-light leading-relaxed mb-4">
-                Now I'm building products on the side and mentoring designers who are figuring out their next move. The two feel more connected than they might look.
+                Along the way, I made a choice: keep climbing at the company, or step sideways into building and teaching. I chose both.
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-8">
-                At Google, I lead UX on systems that touch tens of millions of people. What keeps me going is the same thing it's always been: understanding genuinely hard problems and sharing what I learn as broadly as I can.
+                At Google, I lead UX on systems that touch tens of millions of people. But the work that actually sustains me is the other side — building products from scratch, mentoring designers through the hardest decisions, teaching art to kids who remind me why clarity matters. They're not separate careers. They're the same practice applied at different scales.
+              </p>
+
+              <p className="text-base text-stone-200 leading-relaxed mb-8">
+                What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like enterprise work some days, a side project the next, and a conversation about creative risk with someone just starting out. I'm comfortable with that kind of stretch because the underlying thing — the actual work of design — is the same in all of it.
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-14">
@@ -419,6 +423,39 @@ export default function App() {
                 ))}
               </div>
             </motion.div>
+
+            {/* Greatest Sign Maker */}
+            <motion.div
+              {...fadeUp}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="p-10 bg-stone-800/50 border border-stone-700/60 rounded-3xl hover:border-amber-400/30 transition-colors duration-400"
+            >
+              <span className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-4">
+                Design Philosophy Case Study
+              </span>
+              <h3 className="text-2xl font-medium text-stone-100 mb-6">The Greatest Sign Maker</h3>
+              <div className="space-y-4 text-stone-400 leading-relaxed text-sm">
+                <p>
+                  MLB.com dubbed me "The Greatest Sign Maker" for the large-format printed signs I created as a fixture in the Oakland Coliseum bleachers. But this isn't a nostalgia story — it's a design case study in constraint-based thinking.
+                </p>
+                <p>
+                  In a stadium environment, you have three seconds to catch a camera operator's eye. That constraint forced a specific design philosophy: massive bold lettering on high-contrast backgrounds, paired with imagery that reads instantly from 400 feet away. I eventually perfected a template because perfection wasn't the goal — communication was.
+                </p>
+                <p>
+                  I bring this exact mindset to enterprise UX. Whether I'm designing for a stadium broadcast or a busy executive's phone screen, the principle is the same: clarity under constraints beats craft every time. The sign that gets on air is more valuable than the perfect painting that gets lost in the crowd.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-8">
+                {['Constraint Design', 'Visual Communication', 'Clarity Over Perfection'].map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 bg-stone-900/60 text-stone-400 text-[10px] font-semibold rounded-full uppercase tracking-wider border border-stone-700/50"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
           </div>
 
           <motion.div
@@ -486,6 +523,27 @@ export default function App() {
                   , I'm building the infrastructure to do this at a larger scale — scholarships, mentorship pipelines, and resources for people who don't have easy access to the design world. It's the next chapter of this work.
                 </p>
               </div>
+
+              {/* Podcast Feature */}
+              <motion.div
+                {...fadeUp}
+                className="mb-12 p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
+              >
+                <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-3">
+                  Featured
+                </p>
+                <p className="text-stone-300 leading-relaxed text-sm mb-2">
+                  I was featured on <span className="font-semibold text-stone-100">Roots: A Podcast on Filipino Designers</span>, where I talked about my journey from being the quiet kid from San Jose, to studying abroad in Japan, to building my practice across Silicon Valley tech companies. The episode covers design thinking, overcoming imposter syndrome, and why constraint-based design matters.
+                </p>
+                <a
+                  href="https://lnkd.in/gtSjPqGK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-400 hover:text-amber-300 transition-colors text-sm font-medium inline-flex items-center gap-2"
+                >
+                  Listen now <ArrowUpRight size={14} />
+                </a>
+              </motion.div>
 
               {/* Teaching subsections — reordered */}
               <div className="space-y-8">
