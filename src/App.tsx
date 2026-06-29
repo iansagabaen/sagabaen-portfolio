@@ -83,9 +83,7 @@ const StoryCard = ({
 }) => (
   <motion.div
     {...fadeUp}
-    whileHover={{ y: -4 }}
-    transition={{ duration: 0.3 }}
-    className="p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex flex-col gap-6 hover:border-amber-400/30 transition-colors duration-400"
+    className="p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex flex-col gap-6"
   >
     <span className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold">{eyebrow}</span>
     <h3 className="text-2xl font-medium text-stone-100">{title}</h3>
@@ -135,7 +133,7 @@ export default function App() {
               IS
             </div>
             <div>
-              <span className="text-sm font-semibold tracking-tight text-stone-100 block">Ian Sagabaen</span>
+              <span className="text-sm font-semibold tracking-tight text-stone-100 block">Ian Sagabaen: Designer · Builder · Mentor</span>
               <span className="text-[10px] text-stone-300 tracking-wide">rhymes with Lion</span>
             </div>
           </motion.div>
@@ -496,14 +494,23 @@ export default function App() {
         <div className="relative z-10 max-w-6xl mx-auto">
           <SectionHeader label="Values" title="Giving Back" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+            <div className="lg:col-span-2">
               <div className="space-y-6 text-stone-300 leading-relaxed mb-12">
                 <p className="text-lg text-stone-200">
                   I grew up being taught by people who were generous with what they knew. I don't take that for granted, and I try to pay it forward as directly as I can.
                 </p>
                 <p>
-                  A year abroad in Japan changed everything for me. I was incredibly shy, dropped into rural Okayama with no language and no safety net. That forced me to ask for help constantly, to navigate ambiguity, to figure things out alone. I wasn't the same person when I left. I bring that lesson directly to everyone I mentor: you don't need perfect clarity to start. You just need courage and the willingness to ask for help. That's why I consistently push mentees to study or work abroad — there's no substitute for the growth that comes from being genuinely lost.
+                  A year abroad in Japan changed everything for me. Through{' '}
+                  <a
+                    href="https://goabroad.sjsu.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=34759"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
+                  >
+                    SJSU's EPOK program
+                  </a>
+                  , I was dropped into rural Okayama with no language and no safety net. That forced me to ask for help constantly, to navigate ambiguity, to figure things out alone. I was incredibly shy. I wasn't the same person when I left. I bring that lesson directly to everyone I mentor: you don't need perfect clarity to start. You just need courage and the willingness to ask for help. That's why I consistently push mentees to study or work abroad — there's no substitute for the growth that comes from being genuinely lost.
                 </p>
                 <p>
                   For the past several years I've been an art docent across the elementary school district, which means going into classrooms and talking about art history in ways that seven-year-olds can actually track. It's the most challenging teaching I do, and I love it. You can't hide behind jargon with kids. You have to actually know what you're talking about and then find the version of it that lands.
@@ -627,7 +634,7 @@ export default function App() {
             <motion.div
               {...fadeUp}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="flex flex-col gap-4"
+              className="flex flex-col gap-4 lg:col-span-3"
             >
               {/* Hero speaking photo — SJSU (top, full width) */}
               <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
@@ -735,7 +742,7 @@ export default function App() {
               period="2015 — 2016"
               company="Facebook"
               role="Product Design Contractor"
-              description="Shipped 5 major consumer features to 2B+ user base. Contributed to 35% increase in feature adoption through rapid prototyping and UX validation cycles. Conducted persona research through user interviews, created rapid prototypes for real-user testing. Built style guide integrating new components with Facebook's developer library. Led design for 3 hackathon projects shipping outside normal scope — proving rapid iteration without the burden of polish-first thinking."
+              description="Shipped customer sales tools features for the Facebook sales teams, contributing to a 35% increase in feature adoption through rapid prototyping and UX validation cycles. Conducted persona research through user interviews and created rapid prototypes for real-user testing. Built style guide integrating new components with Facebook's developer library. Led design for hackathon projects shipping outside normal scope — proving rapid iteration without the burden of polish-first thinking."
             />
             <ExperienceItem
               period="2013 — 2015"
@@ -747,7 +754,7 @@ export default function App() {
               period="2008 — 2012"
               company="CompareNetworks"
               role="Senior Graphic Designer"
-              description="Designed for scientific and industrial B2B marketplaces where specs and accuracy mattered more than aesthetics. Shipped 180+ niche marketplace pages across verticals, achieving 3.4% lead conversion rate (vs industry avg 1.8%) through skeptic-targeting design patterns. Built and maintained design systems supporting 6M+ monthly impressions. Learned how to design for audiences that distrust marketing — a skill that proved invaluable."
+              description="Led the design for niche medical, biotech, dental, and publication B2B marketplace pages across verticals. Increased lead conversions through skeptic-targeting design patterns that prioritized specs and accuracy over aesthetic flourish. Managed design systems supporting 6M+ monthly impressions. Learned how to design for audiences that distrust marketing — a skill that proved invaluable across my career."
             />
           </div>
         </div>
