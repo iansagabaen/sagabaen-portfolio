@@ -185,6 +185,9 @@ export default function App() {
                 <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Ian Sagabaen
                 </h1>
+                <p className="text-base text-amber-400 font-light tracking-wide mt-2">
+                  (rhymes with Lion)
+                </p>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
