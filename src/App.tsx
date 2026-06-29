@@ -503,7 +503,7 @@ export default function App() {
               The common thread
             </p>
             <p className="text-stone-300 leading-relaxed">
-              Every project here started because I was frustrated with something. Calendar Scout, Localemaps, my work at Google all came from a real problem I couldn't solve any other way. There's no market research filter between the problem and the solution. When you're the first user, you can't hide behind strategy. That constraint has shaped everything I build. It forces you to think like a skeptic instead of an optimist. It's the only way I know to ship things that actually work.
+              Every project here started because I was frustrated with something. Calendar Scout, Localemaps, my work at Google all came from a real problem I couldn't solve any other way. That constraint has shaped everything I build. It forces you to think like a skeptic instead of an optimist. It's the only way I know to ship things that actually work.
             </p>
           </motion.div>
         </div>
