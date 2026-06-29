@@ -573,21 +573,20 @@ export default function App() {
               {/* Podcast Feature */}
               <motion.div
                 {...fadeUp}
-                className="mb-12 p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
+                className="mb-12"
               >
-                <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-3">
-                  Featured
-                </p>
-                <p className="text-stone-300 leading-relaxed text-sm mb-2">
-                  I was featured on <span className="font-semibold text-stone-100">Roots: A Podcast on Filipino Designers</span>, where I talked about my journey from being the quiet kid from San Jose, to studying abroad in Japan, to building my practice across Silicon Valley tech companies. The episode covers design thinking, overcoming imposter syndrome, and why constraint-based design matters.
-                </p>
                 <a
                   href="https://lnkd.in/gtSjPqGK"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-amber-400 hover:text-amber-300 transition-colors text-sm font-medium inline-flex items-center gap-2"
+                  className="group block overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300"
                 >
-                  Listen now <ArrowUpRight size={14} />
+                  <img
+                    src="/images/1747897015528.jpeg"
+                    alt="Roots: Episode 89 - International Man of Mystery featuring Ian Sagabaen"
+                    className="w-full h-auto object-cover group-hover:opacity-90 transition-opacity duration-300"
+                    loading="lazy"
+                  />
                 </a>
               </motion.div>
 
