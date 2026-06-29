@@ -198,11 +198,11 @@ export default function App() {
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-8">
-                What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like enterprise work some days, a side project the next, a conversation about creative risk with someone just starting out. I'm comfortable with that stretch because the underlying thing—the actual work of design—is the same in all of it.
+                What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like enterprise work some days, a side project the next, a conversation about creative risk with someone just starting out. I'm comfortable with that stretch because the underlying thing (the actual work of design) is the same in all of it.
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-14">
-                I also speak — at conferences, universities, and workshops on design thinking, AI strategy, and UX mentorship. I've lectured through{' '}
+                I also speak at conferences, universities, and workshops on design thinking, AI strategy, and UX mentorship. I've lectured through{' '}
                 <a
                   href="https://buildyourfuture.withgoogle.com/programs/tech-exchange"
                   target="_blank"
@@ -211,7 +211,7 @@ export default function App() {
                 >
                   Google Tech Exchange
                 </a>
-                , led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work — not just talking about it — I'm available.
+                , led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work, not just talking about it, I'm available.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -230,7 +230,7 @@ export default function App() {
               </div>
             </motion.div>
 
-            {/* Headshot column — blended into background */}
+            {/* Headshot column - blended into background */}
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -238,7 +238,7 @@ export default function App() {
               className="relative hidden lg:flex justify-center items-center"
             >
               <div className="relative w-full max-w-lg aspect-[3/4] overflow-hidden rounded-3xl" style={{ background: '#686861' }}>
-                {/* Soft vignette edges — blends portrait into background */}
+                {/* Soft vignette edges - blends portrait into background */}
                 <div className="absolute inset-0 z-10 rounded-3xl"
                   style={{
                     boxShadow: 'inset 0 0 80px 40px #686861'
@@ -275,7 +275,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader label="At Scale" title="What I've done at Google" />
 
-          {/* Data Migration — centerpiece story */}
+          {/* Data Migration - centerpiece story */}
           <motion.div
             {...fadeUp}
             className="mb-12 p-10 bg-stone-800/60 border border-stone-700/60 rounded-3xl"
@@ -320,7 +320,7 @@ export default function App() {
             <StoryCard
               eyebrow="Sales Tools · 2023–2024"
               title="Enterprise Sales Platform"
-              body="Unified three separate internal tools that sales teams were cobbling together into workarounds. The challenge wasn't the interface design — it was figuring out which workflows actually mattered and which ones only existed because no one had questioned them yet."
+              body="Unified three separate internal tools that sales teams were cobbling together into workarounds. The challenge wasn't the interface design; it was figuring out which workflows actually mattered and which ones only existed because no one had questioned them yet."
               tags={['Internal Tools', 'Sales', 'Systems Thinking']}
             />
             <StoryCard
@@ -368,13 +368,13 @@ export default function App() {
               <h3 className="text-2xl font-medium text-stone-100 mb-6">Calendar Scout</h3>
               <div className="space-y-4 text-stone-400 leading-relaxed text-sm">
                 <p>
-                  Newsletters often bury events in dense text — conference dates, submission deadlines, meetup times. Extracting them manually is tedious: copy the date, open calendar, click new event, paste details, repeat. If a newsletter has 5 dates, that's 5 manual steps.
+                  Newsletters often bury events in dense text: conference dates, submission deadlines, meetup times. Extracting them manually is tedious (copy the date, open calendar, click new event, paste details, repeat). If a newsletter has 5 dates, that's 5 manual steps.
                 </p>
                 <p>
                   Calendar Scout flips the workflow: forward the email, and it parses all dates automatically using AI, surfacing them in a single reply. One-time setup, then it runs invisibly in the background. It handles shared calendars so family or team schedules stay in sync without asking anyone to do the manual work.
                 </p>
                 <p>
-                  The tool uses Gemini to read context (event name, time, day of week) and converts dense email prose into actionable calendar entries. It's the kind of automation that's only valuable if it's reliable — I've focused on accuracy over feature count.
+                  The tool uses Gemini to read context (event name, time, day of week) and converts dense email prose into actionable calendar entries. It's the kind of automation that's only valuable if it's reliable. I've focused on accuracy over feature count.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-8 mb-6">
@@ -412,10 +412,10 @@ export default function App() {
                   While traveling globally, I discovered a real market gap: faith community and worship location data exists but is fragmented and nearly impossible to navigate. Searching for congregations in unfamiliar cities meant scattered Facebook groups, outdated lists, and word-of-mouth referrals. That's a structural problem for diaspora communities worldwide.
                 </p>
                 <p>
-                  I built Localemaps initially to solve my own friction. But instead of a static database, I evolved it into a conversational AI bot — recognizing that the use case isn't passive lookup. It's active travel planning, relocation support, and finding communities that align with your specific faith practice and spiritual calendar. The bot handles context: the difference between a short visit and relocating, between routine gatherings and special observances.
+                  I built Localemaps initially to solve my own friction. But instead of a static database, I evolved it into a conversational AI bot. The use case isn't passive lookup; it's active travel planning, relocation support, and finding communities that align with your specific faith practice and spiritual calendar. The bot handles context: the difference between a short visit and relocating, between routine gatherings and special observances.
                 </p>
                 <p>
-                  What makes this work isn't the technology. It's the deep community knowledge (1,304+ faith community locations across continents, understanding worship patterns and observances, trusted access to community networks) combined with the friction-free interface. It's a niche-vertical play that combines community strategy with technical execution — identifying an underserved market and using AI to make navigation invisible.
+                  What makes this work isn't the technology; it's the deep community knowledge (1,304+ faith community locations across continents, understanding worship patterns and observances, trusted access to community networks) combined with the friction-free interface. It's a niche-vertical play that combines community strategy with technical execution to identify an underserved market and use AI to make navigation invisible.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-8 mb-6">
@@ -450,7 +450,7 @@ export default function App() {
               <h3 className="text-2xl font-medium text-stone-100 mb-6">The Greatest Sign Maker</h3>
               <div className="space-y-4 text-stone-400 leading-relaxed text-sm">
                 <p>
-                  I won a Twitter contest in 2012 to throw the first pitch at an Oakland A's game. I promised friends I'd get them on TV, so I created professional 20x30 foam core signs designed for broadcast legibility at 400+ feet away. When MLB.com published "Ian Sagabaen has to be greatest sign-maker in MLB history" on their Cut4 blog, the title stuck — and I've leaned into it ever since.
+                  I won a Twitter contest in 2012 to throw the first pitch at an Oakland A's game. I promised friends I'd get them on TV, so I created professional 20x30 foam core signs designed for broadcast legibility at 400+ feet away. When MLB.com published "Ian Sagabaen has to be greatest sign-maker in MLB history" on their Cut4 blog, the title stuck, and I've leaned into it ever since.
                 </p>
                 <p>
                   What matters isn't nostalgia. When{' '}
@@ -465,7 +465,7 @@ export default function App() {
                   , I realized I'd turned a cultural moment into authentic credibility. 13+ years as a season ticket holder, official A's FanFest appearances, eventually commissioned work directly from the A's. I didn't approach this as a fan making poster board, but as a designer who understood broadcast camera distance, typography, and what real content strategy means: niche enough to be clever, broad enough to resonate.
                 </p>
                 <p>
-                  That same instinct—recognizing moments, working within constraints, building credibility through sustained effort—shows up in everything I design. It's the only method I know.
+                  That same instinct (recognizing moments, working within constraints, building credibility through sustained effort) shows up in everything I design. It's the only method I know.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-8 mb-6">
@@ -497,7 +497,7 @@ export default function App() {
               The common thread
             </p>
             <p className="text-stone-300 leading-relaxed">
-              Every project here started because I was frustrated with something. Calendar Scout, Localemaps, my work at Google—they all came from a real problem I couldn't solve any other way. There's no market research filter between the problem and the solution. When you're the first user, you can't hide behind strategy. That constraint has shaped everything I build. It forces you to think like a skeptic instead of an optimist. It's the only way I know to ship things that actually work.
+              Every project here started because I was frustrated with something. Calendar Scout, Localemaps, my work at Google all came from a real problem I couldn't solve any other way. There's no market research filter between the problem and the solution. When you're the first user, you can't hide behind strategy. That constraint has shaped everything I build. It forces you to think like a skeptic instead of an optimist. It's the only way I know to ship things that actually work.
             </p>
           </motion.div>
         </div>
@@ -514,7 +514,7 @@ export default function App() {
             className="w-full h-full object-cover object-center"
             style={{ opacity: 0.45 }}
           />
-          {/* Dark gradient overlay — heavier at top and bottom for text legibility */}
+          {/* Dark gradient overlay - heavier at top and bottom for text legibility */}
           <div className="absolute inset-0 bg-gradient-to-b from-stone-950/90 via-stone-950/70 to-stone-950/90" />
           {/* Extra left-side overlay for text column readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/50 to-transparent" />
@@ -541,7 +541,7 @@ export default function App() {
                   >
                     San Jose State University's EPOK program
                   </a>
-                  , I was dropped into rural Okayama with no language and no safety net. That forced me to ask for help constantly, to navigate ambiguity, to figure things out alone. I was incredibly shy. I wasn't the same person when I left. I bring that lesson directly to everyone I mentor: you don't need perfect clarity to start. You just need courage and the willingness to ask for help. That's why I consistently push mentees to study or work abroad — there's no substitute for the growth that comes from being genuinely lost.
+                  , I was dropped into rural Okayama with no language and no safety net. That forced me to ask for help constantly, to navigate ambiguity, to figure things out alone. I was incredibly shy. I wasn't the same person when I left. I bring that lesson directly to everyone I mentor: you don't need perfect clarity to start. You just need courage and the willingness to ask for help. That's why I consistently push mentees to study or work abroad. There's no substitute for the growth that comes from being genuinely lost.
                 </p>
                 <p>
                   For the past several years I've been an art docent across the elementary school district, which means going into classrooms and talking about art history in ways that seven-year-olds can actually track. It's the most challenging teaching I do, and I love it. You can't hide behind jargon with kids. You have to actually know what you're talking about and then find the version of it that lands.
@@ -556,7 +556,7 @@ export default function App() {
                   >
                     ADPList
                   </a>{' '}
-                  and internal Google programs, and the common thread is that most people don't need more information — they need someone to help them figure out what they already know and what question to ask next.
+                  and internal Google programs, and the common thread is that most people don't need more information. They need someone to help them figure out what they already know and what question to ask next.
                 </p>
                 <p>
                   Some of this work has grown into something more structured. Through{' '}
@@ -568,18 +568,18 @@ export default function App() {
                   >
                     The Saga Foundation
                   </a>
-                  , I'm building the infrastructure to do this at a larger scale — scholarships, mentorship pipelines, and resources for people who don't have easy access to the design world. There's a specific focus on Filipino and Asian empowerment in tech. I want to be a healthy role model for pinoy UXers and builders who are trying to figure out their path. It's the next chapter of this work.
+                  , I'm building the infrastructure to do this at a larger scale: scholarships, mentorship pipelines, and resources for people who don't have easy access to the design world. There's a specific focus on Filipino and Asian empowerment in tech. I want to be a healthy role model for pinoy UXers and builders who are trying to figure out their path. It's the next chapter of this work.
                 </p>
               </div>
             </div>
 
-            {/* Speaking photo — SJSU + CSU Long Beach */}
+            {/* Speaking photo - SJSU + CSU Long Beach */}
             <motion.div
               {...fadeUp}
               transition={{ delay: 0.2, duration: 0.6 }}
               className="flex flex-col gap-4 lg:col-span-3"
             >
-              {/* Hero speaking photo — SJSU (top, full width) */}
+              {/* Hero speaking photo - SJSU (top, full width) */}
               <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-stone-700/40 bg-stone-800/40">
                 <img
                   src="/images/speaking-sjsu.png"
@@ -609,7 +609,7 @@ export default function App() {
             </motion.div>
           </div>
 
-          {/* Teaching subsections — full width card grid */}
+          {/* Teaching subsections - full width card grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* 1. Workshops & Content */}
             <motion.div
@@ -667,7 +667,7 @@ export default function App() {
             </motion.div>
           </div>
 
-          {/* Podcast Feature — Full Width Card */}
+          {/* Podcast Feature - Full Width Card */}
           <motion.div
             {...fadeUp}
             className="mt-16 p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex gap-8 items-center"
@@ -718,7 +718,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                quote: "Ian has a rare gift for asking the question that reframes everything. He doesn't just give you an answer — he helps you see the problem differently. My career shifted after one conversation.",
+                quote: "Ian has a rare gift for asking the question that reframes everything. He doesn't just give you an answer; he helps you see the problem differently. My career shifted after one conversation.",
                 name: "Constanza Sanchez",
                 context: "UX Designer · ADPList Mentee"
               },
@@ -733,7 +733,7 @@ export default function App() {
                 context: "UX Researcher · Google"
               },
               {
-                quote: "The way Ian approaches teaching is the same way he approaches design — he strips away everything unnecessary and goes straight to what matters. I've learned more from his workshops than from formal courses.",
+                quote: "The way Ian approaches teaching is the same way he approaches design: he strips away everything unnecessary and goes straight to what matters. I've learned more from his workshops than from formal courses.",
                 name: "Jasmine Ke",
                 context: "Designer · Workshop Attendee"
               },
@@ -743,7 +743,7 @@ export default function App() {
                 context: "Founder · Product Collaborator"
               },
               {
-                quote: "Working with Ian raised the bar for how I think about design decisions. He's generous with his thinking and precise in his feedback — exactly what you want in a collaborator.",
+                quote: "Working with Ian raised the bar for how I think about design decisions. He's generous with his thinking and precise in his feedback. Exactly what you want in a collaborator.",
                 name: "Peixin Fu",
                 context: "UX Designer · Collaborator"
               }
@@ -775,28 +775,28 @@ export default function App() {
 
           <div>
             <ExperienceItem
-              period="2018 — Present"
+              period="2018 - Present"
               company="Google"
               role="UX Design Lead"
               description="Leading UX strategy for systems serving 30M+ enterprise users across Workspace Security and Cloud. Shaped design patterns adopted across 40+ product teams, standardizing the approach to complex admin workflows. Worked on everything from security dashboards handling thousands of configurations to AI-driven support systems, to customer migrations. Eight years of this has taught me one consistent thing: complexity usually isn't necessary, it's just inherited."
             />
             <ExperienceItem
-              period="2015 — 2016"
+              period="2015 - 2016"
               company="Facebook"
               role="Product Design Contractor"
-              description="Shipped customer sales tools features for the Facebook sales teams, contributing to a 35% increase in feature adoption through rapid prototyping and UX validation cycles. Conducted persona research through user interviews and created rapid prototypes for real-user testing. Built style guide integrating new components with Facebook's developer library. Led design for hackathon projects shipping outside normal scope — proving rapid iteration without the burden of polish-first thinking."
+              description="Shipped customer sales tools features for the Facebook sales teams, contributing to a 35% increase in feature adoption through rapid prototyping and UX validation cycles. Conducted persona research through user interviews and created rapid prototypes for real-user testing. Built style guide integrating new components with Facebook's developer library. Led design for hackathon projects shipping outside normal scope, proving rapid iteration without the burden of polish-first thinking."
             />
             <ExperienceItem
-              period="2013 — 2015"
+              period="2013 - 2015"
               company="SugarSync"
               role="Principal Product Designer"
               description="Led product design for cloud storage when consumer skepticism was high. Designed core sharing and sync experience across desktop, web, mobile. Drove product-market fit signals: 45% increase in user retention post-redesign, secured 25+ SMB pilot customers validating product fit. Helped the team build reliable access patterns that became defensible against larger competitors."
             />
             <ExperienceItem
-              period="2008 — 2012"
+              period="2008 - 2012"
               company="CompareNetworks"
               role="Senior Graphic Designer"
-              description="Led the design for niche medical, biotech, dental, and publication B2B marketplace pages across verticals. Increased lead conversions through skeptic-targeting design patterns that prioritized specs and accuracy over aesthetic flourish. Managed design systems supporting 6M+ monthly impressions. Learned how to design for audiences that distrust marketing — a skill that proved invaluable across my career."
+              description="Led the design for niche medical, biotech, dental, and publication B2B marketplace pages across verticals. Increased lead conversions through skeptic-targeting design patterns that prioritized specs and accuracy over aesthetic flourish. Managed design systems supporting 6M+ monthly impressions. Learned how to design for audiences that distrust marketing. A skill that proved invaluable across my career."
             />
           </div>
         </div>
