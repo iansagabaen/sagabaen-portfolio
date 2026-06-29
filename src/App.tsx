@@ -523,9 +523,30 @@ export default function App() {
         <div className="relative z-10 max-w-6xl mx-auto">
           <SectionHeader label="Values" title="Giving Back" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+          {/* Podcast Feature — Full Width */}
+          <motion.div
+            {...fadeUp}
+            className="mb-16"
+          >
+            <a
+              href="https://lnkd.in/gtSjPqGK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300"
+            >
+              <img
+                src="/images/1747897015528.jpeg"
+                alt="Roots: Episode 89 - International Man of Mystery featuring Ian Sagabaen"
+                className="w-full h-auto object-cover group-hover:opacity-90 transition-opacity duration-300"
+                loading="lazy"
+              />
+            </a>
+          </motion.div>
+
+          {/* Text + Teaching Photos */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start mb-16">
             <div className="lg:col-span-2">
-              <div className="space-y-6 text-stone-300 leading-relaxed mb-12">
+              <div className="space-y-6 text-stone-300 leading-relaxed">
                 <p className="text-lg text-stone-200">
                   I grew up being taught by people who were generous with what they knew. I don't take that for granted, and I try to pay it forward as directly as I can.
                 </p>
@@ -569,84 +590,6 @@ export default function App() {
                   , I'm building the infrastructure to do this at a larger scale — scholarships, mentorship pipelines, and resources for people who don't have easy access to the design world. There's a specific focus on Filipino and Asian empowerment in tech. I want to be a healthy role model for pinoy UXers and builders who are trying to figure out their path. It's the next chapter of this work.
                 </p>
               </div>
-
-              {/* Podcast Feature */}
-              <motion.div
-                {...fadeUp}
-                className="mb-12"
-              >
-                <a
-                  href="https://lnkd.in/gtSjPqGK"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300"
-                >
-                  <img
-                    src="/images/1747897015528.jpeg"
-                    alt="Roots: Episode 89 - International Man of Mystery featuring Ian Sagabaen"
-                    className="w-full h-auto object-cover group-hover:opacity-90 transition-opacity duration-300"
-                    loading="lazy"
-                  />
-                </a>
-              </motion.div>
-
-              {/* Teaching subsections — card grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-                {/* 1. Workshops & Content */}
-                <motion.div
-                  {...fadeUp}
-                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
-                >
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
-                    Workshops & Content
-                  </h4>
-                  <p className="text-sm text-stone-300 leading-relaxed">
-                    Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.
-                  </p>
-                </motion.div>
-
-                {/* 2. Design Mentorship */}
-                <motion.div
-                  {...fadeUp}
-                  transition={{ delay: 0.1, duration: 0.6 }}
-                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
-                >
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
-                    Design Mentorship
-                  </h4>
-                  <p className="text-sm text-stone-300 leading-relaxed">
-                    Working with emerging designers through ADPList and Google programs. Focus on career decisions, not just craft.
-                  </p>
-                </motion.div>
-
-                {/* 3. Community Building */}
-                <motion.div
-                  {...fadeUp}
-                  transition={{ delay: 0.2, duration: 0.6 }}
-                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
-                >
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
-                    Community Building
-                  </h4>
-                  <p className="text-sm text-stone-300 leading-relaxed">
-                    ERGs, collaborative workshops, spaces where people can experiment without being experts first. You don't need permission or credentials to participate.
-                  </p>
-                </motion.div>
-
-                {/* 4. Art Docent */}
-                <motion.div
-                  {...fadeUp}
-                  transition={{ delay: 0.3, duration: 0.6 }}
-                  className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
-                >
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
-                    Art Docent
-                  </h4>
-                  <p className="text-sm text-stone-300 leading-relaxed">
-                    Teaching art history across elementary school district classrooms. The constraint of making it land with kids makes me a sharper teacher everywhere else.
-                  </p>
-                </motion.div>
-              </div>
             </div>
 
             {/* Speaking photo — SJSU + CSU Long Beach */}
@@ -682,6 +625,64 @@ export default function App() {
                   CSU Long Beach
                 </p>
               </div>
+            </motion.div>
+          </div>
+
+          {/* Teaching subsections — full width card grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* 1. Workshops & Content */}
+            <motion.div
+              {...fadeUp}
+              className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
+            >
+              <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                Workshops & Content
+              </h4>
+              <p className="text-sm text-stone-300 leading-relaxed">
+                Building curriculum around the designer-to-founder path. Practical, not inspirational. What do you actually do on day one.
+              </p>
+            </motion.div>
+
+            {/* 2. Design Mentorship */}
+            <motion.div
+              {...fadeUp}
+              transition={{ delay: 0.1, duration: 0.6 }}
+              className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
+            >
+              <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                Design Mentorship
+              </h4>
+              <p className="text-sm text-stone-300 leading-relaxed">
+                Working with emerging designers through ADPList and Google programs. Focus on career decisions, not just craft.
+              </p>
+            </motion.div>
+
+            {/* 3. Community Building */}
+            <motion.div
+              {...fadeUp}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
+            >
+              <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                Community Building
+              </h4>
+              <p className="text-sm text-stone-300 leading-relaxed">
+                ERGs, collaborative workshops, spaces where people can experiment without being experts first. You don't need permission or credentials to participate.
+              </p>
+            </motion.div>
+
+            {/* 4. Art Docent */}
+            <motion.div
+              {...fadeUp}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="p-6 bg-stone-800/40 border border-stone-700/40 rounded-2xl"
+            >
+              <h4 className="text-sm font-bold uppercase tracking-widest text-stone-100 mb-3">
+                Art Docent
+              </h4>
+              <p className="text-sm text-stone-300 leading-relaxed">
+                Teaching art history across elementary school district classrooms. The constraint of making it land with kids makes me a sharper teacher everywhere else.
+              </p>
             </motion.div>
           </div>
         </div>
