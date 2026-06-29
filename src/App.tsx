@@ -130,10 +130,10 @@ export default function App() {
             className="flex items-center gap-3"
           >
             <img
-              src="/images/ian icon.svg"
+              src="/images/Generated Image June 29, 2026 - 12_09AM.png"
               alt="Ian Sagabaen"
-              className="w-8 h-8"
-              style={{ filter: 'invert(1)' }}
+              className="w-8 h-8 flex-shrink-0"
+              style={{ borderRadius: '50%', objectFit: 'cover' }}
             />
             <div>
               <span className="text-sm font-semibold tracking-tight text-stone-100 block">Ian Sagabaen: Designer · Builder · Mentor</span>
