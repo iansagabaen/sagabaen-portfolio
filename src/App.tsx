@@ -134,7 +134,6 @@ export default function App() {
             </div>
             <div>
               <span className="text-sm font-semibold tracking-tight text-stone-100 block">Ian Sagabaen: Designer · Builder · Mentor</span>
-              <span className="text-[10px] text-stone-300 tracking-wide">rhymes with Lion</span>
             </div>
           </motion.div>
 
@@ -206,7 +205,7 @@ export default function App() {
               </p>
 
               <p className="text-base text-stone-200 leading-relaxed mb-14">
-                I also speak — at conferences, universities, and workshops. I've lectured through{' '}
+                I also speak — at conferences, universities, and workshops on design thinking, AI strategy, and UX mentorship. I've lectured through{' '}
                 <a
                   href="https://buildyourfuture.withgoogle.com/programs/tech-exchange"
                   target="_blank"
@@ -441,10 +440,10 @@ export default function App() {
                   I won a Twitter contest in 2012 to throw the first pitch at an Oakland A's game. I promised friends I'd get them on TV, so I created professional 20x30 foam core signs designed for broadcast legibility at 400+ feet away. When MLB.com published "Ian Sagabaen has to be greatest sign-maker in MLB history" on their Cut4 blog, the title stuck — and I've leaned into it ever since.
                 </p>
                 <p>
-                  What matters isn't nostalgia. It's that I recognized a cultural moment and turned it into authentic credibility. 365+ documented snagged baseballs, 13+ years as a season ticket holder, official A's FanFest appearances, and eventually commissioned work directly from the A's organization. The real insight: I didn't approach this as a fan making poster board. I approached it as a designer who understood broadcast camera distance, high-contrast typography, and what content strategy actually means—being niche enough to be clever, but broad enough to resonate.
+                  What matters isn't nostalgia. It's that I recognized a cultural moment and turned it into authentic credibility. 13+ years as a season ticket holder, official A's FanFest appearances, and eventually commissioned work directly from the A's organization. The real insight: I didn't approach this as a fan making poster board. I approached it as a designer who understood broadcast camera distance, high-contrast typography, and what content strategy actually means—being niche enough to be clever, but broad enough to resonate.
                 </p>
                 <p>
-                  That same instinct applies to every product I touch. Recognize the moment. Understand your constraints. Build authentic credibility through sustained expertise. The design decisions come from there.
+                  This same approach—recognize the moment, understand your constraints, build credibility through sustained practice—is what I bring to every product I work on. The difference is scale, not method.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-8">
@@ -468,7 +467,7 @@ export default function App() {
               Why I build on the side
             </p>
             <p className="text-stone-300 leading-relaxed">
-              Both of these started as problems I had, not market research. I think that's the only honest way to start a product, at least at this stage. The design instincts I've developed at Google do transfer, but the thing that actually changes is how much closer you are to the person you're designing for, because that person is you.
+              Both emerged from problems I faced. Market research is useful, but there's no substitute for being your own first user. You stay accountable to what actually works, and you can't hide behind buzzwords when the person who'll suffer from a bad decision is you.
             </p>
           </motion.div>
         </div>
@@ -508,7 +507,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
                   >
-                    SJSU's EPOK program
+                    San Jose State University's EPOK program
                   </a>
                   , I was dropped into rural Okayama with no language and no safety net. That forced me to ask for help constantly, to navigate ambiguity, to figure things out alone. I was incredibly shy. I wasn't the same person when I left. I bring that lesson directly to everyone I mentor: you don't need perfect clarity to start. You just need courage and the willingness to ask for help. That's why I consistently push mentees to study or work abroad — there's no substitute for the growth that comes from being genuinely lost.
                 </p>
