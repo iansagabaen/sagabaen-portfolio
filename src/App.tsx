@@ -182,9 +182,6 @@ export default function App() {
                 <h1 className="text-5xl md:text-7xl font-light tracking-tight leading-[1.05] text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Ian Sagabaen
                 </h1>
-                <p className="text-lg text-amber-400 font-light tracking-wide mt-2 mb-8">
-                  (rhymes with Lion)
-                </p>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -380,7 +377,7 @@ export default function App() {
                   The tool uses Gemini to read context (event name, time, day of week) and converts dense email prose into actionable calendar entries. It's the kind of automation that's only valuable if it's reliable — I've focused on accuracy over feature count.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2 mt-8">
+              <div className="flex flex-wrap gap-2 mt-8 mb-6">
                 {['Email Parsing', 'Calendar AI', 'Shared Scheduling'].map((tag) => (
                   <span
                     key={tag}
@@ -390,6 +387,14 @@ export default function App() {
                   </span>
                 ))}
               </div>
+              <a
+                href="https://calendarscout.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-amber-400 text-stone-950 text-sm font-semibold rounded-lg hover:bg-amber-300 transition-colors"
+              >
+                Visit Calendar Scout <ArrowUpRight size={14} />
+              </a>
             </motion.div>
 
             {/* Localemaps */}
@@ -413,7 +418,7 @@ export default function App() {
                   What makes this work isn't the technology. It's the deep community knowledge (1,304+ faith community locations across continents, understanding worship patterns and observances, trusted access to community networks) combined with the friction-free interface. It's a niche-vertical play that combines community strategy with technical execution — identifying an underserved market and using AI to make navigation invisible.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2 mt-8">
+              <div className="flex flex-wrap gap-2 mt-8 mb-6">
                 {['AI Filtering', 'Local Community', 'Maps'].map((tag) => (
                   <span
                     key={tag}
@@ -423,6 +428,14 @@ export default function App() {
                   </span>
                 ))}
               </div>
+              <a
+                href="https://localemaps.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-amber-400 text-stone-950 text-sm font-semibold rounded-lg hover:bg-amber-300 transition-colors"
+              >
+                Visit Localemaps <ArrowUpRight size={14} />
+              </a>
             </motion.div>
 
             {/* Greatest Sign Maker */}
@@ -455,7 +468,7 @@ export default function App() {
                   That same instinct—recognizing moments, working within constraints, building credibility through sustained effort—shows up in everything I design. It's the only method I know.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2 mt-8">
+              <div className="flex flex-wrap gap-2 mt-8 mb-6">
                 {['Constraint Design', 'Visual Communication', 'Clarity Over Perfection'].map((tag) => (
                   <span
                     key={tag}
@@ -465,6 +478,14 @@ export default function App() {
                   </span>
                 ))}
               </div>
+              <a
+                href="https://greatestsignmaker.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-amber-400 text-stone-950 text-sm font-semibold rounded-lg hover:bg-amber-300 transition-colors"
+              >
+                Visit Greatest Sign Maker <ArrowUpRight size={14} />
+              </a>
             </motion.div>
           </div>
 
@@ -476,7 +497,7 @@ export default function App() {
               The common thread
             </p>
             <p className="text-stone-300 leading-relaxed">
-              Calendar Scout, Localemaps, and every project at Google started the same way: I had a problem. No market research, no strategic planning. Just a friction point I couldn't ignore. Building products I'd actually use keeps me honest in a way that pure strategy never could. It's the same discipline I learned making signs that people actually wanted to watch, the same discipline that makes mentorship work. You show up with something real, and the integrity speaks for itself.
+              Every project here started because I was frustrated with something. Calendar Scout, Localemaps, my work at Google—they all came from a real problem I couldn't solve any other way. There's no market research filter between the problem and the solution. When you're the first user, you can't hide behind strategy. That constraint has shaped everything I build. It forces you to think like a skeptic instead of an optimist. It's the only way I know to ship things that actually work.
             </p>
           </motion.div>
         </div>
@@ -709,7 +730,7 @@ export default function App() {
                 key={t.name}
                 {...fadeUp}
                 transition={{ delay: i * 0.08, duration: 0.6 }}
-                className="p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex flex-col gap-6 hover:border-amber-400/20 transition-colors duration-400"
+                className="p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex flex-col gap-6"
               >
                 <Quote size={20} className="text-amber-400/40 flex-shrink-0" />
                 <p className="text-stone-300 leading-relaxed text-sm flex-grow">
