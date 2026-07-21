@@ -421,7 +421,7 @@ export default function HomePage() {
                 ))}
               </div>
               <a
-                href="https://calendarscout.netlify.app/"
+                href="https://sendtoschedule.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-amber-400 text-stone-950 text-sm font-semibold rounded-lg hover:bg-amber-300 transition-colors"
