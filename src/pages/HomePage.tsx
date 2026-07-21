@@ -105,6 +105,7 @@ const StoryCard = ({
 // ─── Home Page ────────────────────────────────────────────────────────────────
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
+  const showGoogleWork = import.meta.env.VITE_SHOW_GOOGLE_PROJECTS === 'true';
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -191,35 +192,58 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                I've spent the last decade at Google learning how to simplify{' '}
-                <span className="text-amber-400">enterprise chaos.</span>
-              </h2>
+              {showGoogleWork ? (
+                <>
+                  <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                    I've spent the last decade at Google learning how to simplify{' '}
+                    <span className="text-amber-400">enterprise chaos.</span>
+                  </h2>
 
-              <p className="text-xl text-stone-100 font-light leading-relaxed mb-4">
-                Along the way, I made a choice: keep climbing at the company, or step sideways into building and teaching. I chose both.
-              </p>
+                  <p className="text-xl text-stone-100 font-light leading-relaxed mb-4">
+                    Along the way, I made a choice: keep climbing at the company, or step sideways into building and teaching. I chose both.
+                  </p>
 
-              <p className="text-base text-stone-200 leading-relaxed mb-8">
-                At Google, I lead UX on systems that touch tens of millions of people. But the work that actually sustains me is the other side: building products from scratch, mentoring designers through the hardest decisions, teaching art to kids who remind me why clarity matters. They're not separate careers, just the same practice applied at different scales.
-              </p>
+                  <p className="text-base text-stone-200 leading-relaxed mb-8">
+                    At Google, I lead UX on systems that touch tens of millions of people. But the work that actually sustains me is the other side: building products from scratch, mentoring designers through the hardest decisions, teaching art to kids who remind me why clarity matters. They're not separate careers, just the same practice applied at different scales.
+                  </p>
 
-              <p className="text-base text-stone-200 leading-relaxed mb-8">
-                What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like enterprise work some days, a side project the next, a conversation about creative risk with someone just starting out. I'm comfortable with that stretch because the underlying thing (the actual work of design) is the same in all of it.
-              </p>
+                  <p className="text-base text-stone-200 leading-relaxed mb-8">
+                    What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like enterprise work some days, a side project the next, a conversation about creative risk with someone just starting out. I'm comfortable with that stretch because the underlying thing (the actual work of design) is the same in all of it.
+                  </p>
 
-              <p className="text-base text-stone-200 leading-relaxed mb-14">
-                I also speak at conferences, universities, and workshops on design thinking, AI strategy, and UX mentorship. I've lectured through{' '}
-                <a
-                  href="https://buildyourfuture.withgoogle.com/programs/tech-exchange"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
-                >
-                  Google Tech Exchange
-                </a>
-                , led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work, not just talking about it, I'm available.
-              </p>
+                  <p className="text-base text-stone-200 leading-relaxed mb-14">
+                    I also speak at conferences, universities, and workshops on design thinking, AI strategy, and UX mentorship. I've lectured through{' '}
+                    <a
+                      href="https://buildyourfuture.withgoogle.com/programs/tech-exchange"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-amber-400 hover:text-amber-300 transition-colors underline underline-offset-2"
+                    >
+                      Google Tech Exchange
+                    </a>
+                    , led design sprints for cross-functional teams, and hosted campus tours for hundreds of UX practitioners. If you're looking for a speaker who's still in the work, not just talking about it, I'm available.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2 className="text-3xl md:text-4xl font-light tracking-tight leading-[1.1] mb-10 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                    I design systems that solve{' '}
+                    <span className="text-amber-400">genuinely hard problems.</span>
+                  </h2>
+
+                  <p className="text-xl text-stone-100 font-light leading-relaxed mb-4">
+                    I build products from scratch, mentor designers through difficult decisions, and teach creative thinking to people just starting out.
+                  </p>
+
+                  <p className="text-base text-stone-200 leading-relaxed mb-8">
+                    What keeps me going is understanding genuinely hard problems and sharing what I learn as broadly as I can. That looks like side projects some days, consulting the next, a conversation about creative risk with someone building their first thing. I'm comfortable with that stretch because the underlying thing (the actual work of design) is the same in all of it.
+                  </p>
+
+                  <p className="text-base text-stone-200 leading-relaxed mb-14">
+                    I speak at conferences, universities, and workshops on design thinking, AI strategy, and UX mentorship. If you're looking for a designer who's still in the work, not just talking about it, I'm available.
+                  </p>
+                </>
+              )}
 
               <div className="flex flex-wrap gap-4">
                 <a
@@ -278,6 +302,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Google Work: What I've Actually Done ── */}
+      {showGoogleWork && (
       <section id="work" className="py-32 px-6 bg-stone-900/50">
         <div className="max-w-6xl mx-auto">
           <SectionHeader label="At Scale" title="What I've done at Google" />
@@ -357,6 +382,7 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+      )}
 
       {/* ── What I'm Building ── */}
       <section id="building" className="py-32 px-6">
