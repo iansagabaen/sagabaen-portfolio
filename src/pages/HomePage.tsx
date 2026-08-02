@@ -703,7 +703,7 @@ export default function HomePage() {
           {/* Podcast Feature - Full Width Card */}
           <motion.div
             {...fadeUp}
-            className="mt-16 p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex gap-8 items-center"
+            className="mt-16 p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex flex-col md:flex-row gap-8 items-center"
           >
             {/* Podcast Graphic */}
             <Link
@@ -719,7 +719,7 @@ export default function HomePage() {
             </Link>
 
             {/* Text Content */}
-            <div className="flex-1 flex flex-col justify-center gap-4">
+            <div className="flex-1 min-w-0 w-full flex flex-col justify-center items-center md:items-start gap-4 text-center md:text-left">
               <div>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-3">
                   Featured
