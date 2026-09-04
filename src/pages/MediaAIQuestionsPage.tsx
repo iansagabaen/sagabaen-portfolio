@@ -80,7 +80,7 @@ export default function MediaAIQuestionsPage() {
             <h2 className="text-2xl font-semibold text-stone-100">Summary</h2>
             <p className="text-sm text-stone-400">Station: INCRadio DZEM954 · Aired April 18, 2025</p>
             <p className="text-sm text-stone-400 italic">
-              A recap of my segment, in my own words, not a full transcript. Watch the video above
+              A recap of my segment, in my own words, not a full transcript. Watch the video below
               for the whole conversation.
             </p>
           </motion.div>
@@ -98,10 +98,9 @@ export default function MediaAIQuestionsPage() {
           <motion.div {...fadeUp} className="space-y-6 prose prose-invert max-w-none">
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-                This episode was a live Q&amp;A. Brother Gleon and Sister Jill Navasca hosted
-                again from the Redwood City congregation, and I joined them to help answer AI
-                questions we didn't get to on our last broadcast, along with new ones from that
-                night's chat.
+                This episode was a live Q&amp;A. Glian and Jill Navasca hosted again from the
+                Redwood City congregation, and I joined them to help answer AI questions we didn't
+                get to on our last broadcast, along with new ones from that night's chat.
               </p>
 
               <hr className="border-stone-700 my-8" />
@@ -170,7 +169,7 @@ export default function MediaAIQuestionsPage() {
               <h3 className="text-lg font-semibold text-stone-100 mt-8">Will AI Replace Design Jobs?</h3>
 
               <p>
-                My cousin Marlin asked whether AI will eventually replace design work, which hits
+                My cousin Marlon asked whether AI will eventually replace design work, which hits
                 close to home since that's my day job. My honest answer was "eventually," and
                 probably sooner than I originally expected, maybe within the next couple of years.
                 Right now though, I use it to augment my workload, mostly as a sounding board to
@@ -191,8 +190,8 @@ export default function MediaAIQuestionsPage() {
                 The last question was about telling when AI is hallucinating versus giving you the
                 right answer, which comes up constantly. My method is simple: test it on things you
                 already know the answer to. In my experience it's right about 70% of the time, but
-                when it's wrong, it can be confidently, badly wrong. So my standing advice is to
-                keep using it, but scrutinize everything and never take an answer at face value.
+                when it's wrong, it can be confidently, badly wrong. My standing advice: keep
+                using it, but scrutinize everything and never take an answer at face value.
               </p>
             </div>
           </motion.div>

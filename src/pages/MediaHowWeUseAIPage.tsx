@@ -80,7 +80,7 @@ export default function MediaHowWeUseAIPage() {
             <h2 className="text-2xl font-semibold text-stone-100">Summary</h2>
             <p className="text-sm text-stone-400">Station: INCRadio DZEM954 · Aired March 22, 2025</p>
             <p className="text-sm text-stone-400 italic">
-              A recap of my segment, in my own words, not a full transcript. Watch the video above
+              A recap of my segment, in my own words, not a full transcript. Watch the video below
               for the whole conversation.
             </p>
           </motion.div>
@@ -98,13 +98,12 @@ export default function MediaHowWeUseAIPage() {
           <motion.div {...fadeUp} className="space-y-6 prose prose-invert max-w-none">
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-                This earlier segment introduced AI from scratch for the district. Brother Miguel
-                hosted alongside Sister Jill Navasca and Brother Glian from the Salinas
-                congregation, and I joined as a newer panelist. I gave a quick introduction: born
-                and raised in Silicon Valley, a design degree, and a full-time UX design job at a
-                big tech company, where I work with AI tools constantly. That's really why I was
-                there, to help make the technology feel less intimidating for people who were
-                curious but understandably wary of it.
+                This earlier segment introduced AI from scratch for the district. Miguel hosted
+                alongside Jill Navasca and Glian from the Salinas congregation, and I joined as a
+                newer panelist. I gave a quick introduction: born and raised in Silicon Valley, a
+                design degree, and a full-time UX design job at a big tech company, where I work
+                with AI tools constantly. I wanted to make the technology feel less intimidating
+                for people who were curious but understandably wary of it.
               </p>
 
               <hr className="border-stone-700 my-8" />
