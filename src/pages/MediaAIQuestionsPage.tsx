@@ -58,7 +58,7 @@ export default function MediaAIQuestionsPage() {
             <h1 className="text-5xl md:text-6xl font-light tracking-tight leading-[1.1] mb-4 text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               A.I. Questions Answered
             </h1>
-            <p className="text-xl text-amber-400 font-light tracking-wide mb-8">INCRadio DZEM954 — Silicon Valley, CA Satellite Studio</p>
+            <p className="text-xl text-amber-400 font-light tracking-wide mb-8">INCRadio DZEM954 — Silicon Valley, CA Satellite Studio · April 18, 2025</p>
             <div className="flex gap-4 flex-wrap">
               <a
                 href={WATCH_URL}
@@ -78,7 +78,7 @@ export default function MediaAIQuestionsPage() {
         <div className="max-w-4xl mx-auto space-y-8 text-stone-300 leading-relaxed">
           <motion.div {...fadeUp} className="space-y-4">
             <h2 className="text-2xl font-semibold text-stone-100">Summary</h2>
-            <p className="text-sm text-stone-400">Station: INCRadio DZEM954</p>
+            <p className="text-sm text-stone-400">Station: INCRadio DZEM954 · Aired April 18, 2025</p>
           </motion.div>
 
           <motion.div {...fadeUp} className="w-full aspect-video rounded-2xl overflow-hidden border border-stone-800">
@@ -94,24 +94,61 @@ export default function MediaAIQuestionsPage() {
           <motion.div {...fadeUp} className="space-y-6 prose prose-invert max-w-none">
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-                INCRadio DZEM954 is the YouTube presence of INC Radio (DZEM 954), the broadcast
-                arm connected to the Iglesia ni Cristo community. Its Silicon Valley satellite
-                studio produces regular live segments for INC congregations across the wider Bay
-                Area and Central Coast — the station's own broadcast tags for this segment list
-                San Jose, Redwood City, Fremont, Milpitas, Salinas, Monterey, and Gilroy among the
-                communities it reaches.
+                This episode was a live, audience-driven Q&amp;A: it followed up on questions from
+                the station's earlier "How We Use A.I." broadcast that didn't get answered on air,
+                plus fresh ones from that night's chat. Hosts Brother Gleon and Sister Jill
+                Navasta, from the Redwood City congregation, were joined again by Ian, introduced
+                to the audience as a UX designer at a major tech company, a career mentor, and a
+                father — there specifically to help field the community's AI questions in plain,
+                non-technical language.
               </p>
 
               <p>
-                This particular segment aired live on Friday, April 18, 2025, structured as an
-                open Q&amp;A: per the station's own description, it was framed as a chance to
-                "discuss how we use A.I. and answer some questions the brethren had about it" —
-                i.e. congregation members had submitted real questions about artificial
-                intelligence ahead of time, and the broadcast worked through them live rather than
-                following a scripted interview format. Ian joined as a guest to help field those
-                questions, bringing the perspective of someone who works with AI-adjacent tools
-                professionally as a UX designer at Google Cloud, alongside his ongoing UX
-                mentoring work outside of it.
+                On whether AI threatens jobs, Ian argued the more accurate framing is augmentation
+                rather than replacement: grocery-store self-checkout was his go-to example, where
+                the repetitive task automated away but staff shifted toward higher-level
+                troubleshooting and support rather than disappearing outright (though he noted
+                some retailers have gone fully cashier-less). A related listener question — who
+                owns a photo or image an AI tool generates — led him into copyright territory:
+                under current US law, purely AI-generated output generally isn't something you can
+                claim ownership over and functions closer to public domain, though what you're
+                allowed to do with it can still depend on the specific AI tool's own license
+                terms. He was upfront that he isn't a lawyer and that this area of law is moving
+                fast, and offered a rule of thumb from his design-school background instead: treat
+                AI output as a rough first draft to build on top of, not a finished product, and
+                lean on how much of the final result is genuinely your own editing and judgment.
+              </p>
+
+              <p>
+                Asked about the risk of feeding AI tools sensitive information — including
+                anything church-related — his answer was direct: treat anything typed into an AI
+                tool as effectively public the moment you submit it, since there's no real way to
+                pull it back out once it's absorbed into the system. That "it's learning from what
+                you feed it" idea ran through the episode as a broader caution. On where AI is
+                already doing real work day to day, he pointed past the obvious chatbot examples
+                to things like spam filtering, medical chart and imaging review (which he said AI
+                already handles with high reported confidence), and turn-by-turn mapping and
+                directions — the kind of task that used to mean pulling a paper map out of the
+                glovebox. He also shared a personal use case from his time living in Japan: using
+                an AI chat tool to help him rehearse a formal, apologetic way to explain a problem
+                to a train station attendant in Japanese, breaking the phrase down piece by piece.
+              </p>
+
+              <p>
+                On whether AI will eventually replace design work specifically — his own field —
+                he said "eventually," and admitted the pace might be faster than he originally
+                expected, possibly within the next couple of years. For now, though, he described
+                using AI mainly as a sounding board to pressure-test ideas rather than to generate
+                final work outright, which he credited for a real jump in his own productivity. He
+                backed that up with a real-world example: an ad campaign built entirely by AI —
+                concept and animation both — that drew public backlash for feeling generic and
+                soulless, which he read as proof that human judgment and individuality still
+                matter in creative work AI can't easily replicate. On separating good AI answers
+                from confidently wrong ones, his practical test is spot-checking AI on questions
+                he already knows the answer to; in his experience it's right most of the time, but
+                when it's wrong, it can be wrong in a way that sounds just as confident — so his
+                standing advice, repeated throughout the episode, was to keep using AI, but always
+                verify rather than take any single answer at face value.
               </p>
 
               <p>

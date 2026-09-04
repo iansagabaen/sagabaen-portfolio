@@ -94,24 +94,66 @@ export default function MediaHowWeUseAIPage() {
           <motion.div {...fadeUp} className="space-y-6 prose prose-invert max-w-none">
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-                "How We Use A.I." aired live out of INCRadio DZEM954's Silicon Valley satellite
-                studio in late March 2025 — the station's own listing places it at 2:00 PM
-                Philippine time on March 21, which lands the evening before in Pacific time,
-                consistent with the March 22 date the video carries. INCRadio DZEM954 is the
-                YouTube arm of INC Radio (DZEM 954), the broadcast presence tied to the Iglesia ni
-                Cristo community, and its Silicon Valley studio regularly streams live to
-                congregations across the Bay Area.
+                This earlier segment set up the AI conversation from scratch for INCRadio
+                DZEM954's Silicon Valley audience, hosted by Brother Miguel alongside Sister Jill
+                Navasta and Brother Gleen (from the Salinas congregation), with Ian joining as a
+                newer panelist. He introduced himself as someone born and raised in Silicon
+                Valley, a design graduate, and working full-time in UX design at a major tech
+                company — professionally immersed in AI tools as part of his day-to-day work,
+                which was the reason he was there to help demystify the topic for an audience
+                that, by his own read, ranged from curious to genuinely wary of it.
               </p>
 
               <p>
-                Unlike the Q&amp;A format of the station's other AI segment ("A.I. Questions
-                Answered," a few weeks later on April 18), this earlier broadcast centered on how
-                everyday people and organizations were starting to fold AI tools into daily life
-                and work — timed right as generative AI assistants and chatbots were becoming
-                mainstream in early 2025. As a guest with a UX design background at Google Cloud
-                and an ongoing habit of mentoring other designers, Ian spoke to that shift from the
-                vantage point of someone who works with these tools professionally, alongside a
-                broader conversation about how AI was showing up for the community more generally.
+                Asked to explain AI in plain terms, he reached for an analogy: a child who's told
+                directions once, then adjusts their own behavior the next time based on what they
+                learned from that experience — AI systems work on a similar principle, picking up
+                on patterns over repeated exposure (his example was a smart device that starts
+                noticing you make coffee at 6:45 every morning and eventually anticipates it). On
+                why AI suddenly felt like a mainstream "hot topic" rather than something brand
+                new, his own read was two-fold: the underlying computing hardware got cheaper and
+                more efficient, and — speaking as a UX designer — the tools themselves finally
+                became approachable and user-friendly rather than intimidatingly technical, which
+                is why so many companies rushed to build things like AI image generation into
+                ordinary products.
+              </p>
+
+              <p>
+                His stated top tip, repeated more than once, was to treat AI as a tool for a first
+                draft, not a finished answer: his own workflow is prompting it for a starting
+                point on a document, then reviewing, correcting, and rewriting the result in his
+                own voice — which he said is the real reason colleagues sometimes ask how he turns
+                work around so quickly. He was candid about the ethical tension this creates,
+                especially for students using AI to fully write essays or exams instead of doing
+                the work themselves: his position is that whoever's name is attached to a piece of
+                work is accountable for it regardless of what tool helped make it, so reviewing
+                and owning the final result isn't optional. He offered a personal, unglamorous
+                example of the "good" use of that same instinct — using an AI tool late at night
+                to help parse dense HOA legal paperwork when he was too mentally fatigued to get
+                through it himself, treating the AI's summary as a starting point to sanity-check
+                rather than a final answer.
+              </p>
+
+              <p>
+                On keeping AI use in check, his framing was to keep using it, but respectfully —
+                not for scams, cheating, or harmful content — and to stay mindful that AI tools
+                learn from how people use them, so misuse or bad-faith prompting doesn't stay
+                isolated to one interaction. Asked how to tell real information from
+                AI-generated misinformation or deepfakes, his advice was to trust the same
+                instincts people already use to spot other scams — an AI tool that cites its
+                actual sources is safer to rely on than one that doesn't, and anything that
+                already feels "off," like a celebrity seemingly promoting cryptocurrency, deserves
+                the same skepticism as any other scam. He agreed with a viewer's comment that AI's
+                value in healthcare — helping doctors and nurses move faster for patients — was an
+                underrated example next to flashier uses like image generation, and shared that
+                he's personally used AI as a low-stakes sounding board to talk through a problem
+                out loud, saying that typing it out and getting objective follow-up questions back
+                (with none of a person's built-in bias) sometimes helped him think an issue
+                through further than he would have alone. Asked for his single favorite everyday
+                use of AI, he landed on something practical: role-playing a tense email exchange
+                with an AI tool before sending it — asking it to respond in the voice of the
+                actual recipient (in his example, a neighbor in his HOA) — as a way to catch an
+                overly raw or "stern" tone before it goes out.
               </p>
 
               <p>
