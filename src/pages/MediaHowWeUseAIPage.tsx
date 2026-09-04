@@ -94,21 +94,24 @@ export default function MediaHowWeUseAIPage() {
           <motion.div {...fadeUp} className="space-y-6 prose prose-invert max-w-none">
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-                This segment, "How We Use A.I.," aired March 22, 2025 out of INCRadio DZEM954's
-                Silicon Valley, California satellite studio. INCRadio DZEM954 is the YouTube arm
-                of INC Radio (DZEM 954), tied to the Iglesia ni Cristo community, and the Silicon
-                Valley studio regularly produces local segments featuring community members and
-                guests from the Bay Area.
+                "How We Use A.I." aired live out of INCRadio DZEM954's Silicon Valley satellite
+                studio in late March 2025 — the station's own listing places it at 2:00 PM
+                Philippine time on March 21, which lands the evening before in Pacific time,
+                consistent with the March 22 date the video carries. INCRadio DZEM954 is the
+                YouTube arm of INC Radio (DZEM 954), the broadcast presence tied to the Iglesia ni
+                Cristo community, and its Silicon Valley studio regularly streams live to
+                congregations across the Bay Area.
               </p>
 
               <p>
-                Judging by the title, the conversation was framed around how ordinary people and
-                organizations were beginning to fold AI tools into daily life and work in early
-                2025 — a period when tools like chatbots and AI assistants were rapidly becoming
-                mainstream. As a guest with a UX design background at Google Cloud and a habit of
-                mentoring other designers, Ian would have spoken to that shift from the vantage
-                point of someone who works with these tools professionally, alongside a broader
-                conversation about how AI was showing up for the community more generally.
+                Unlike the Q&amp;A format of the station's other AI segment ("A.I. Questions
+                Answered," a few weeks later on April 18), this earlier broadcast centered on how
+                everyday people and organizations were starting to fold AI tools into daily life
+                and work — timed right as generative AI assistants and chatbots were becoming
+                mainstream in early 2025. As a guest with a UX design background at Google Cloud
+                and an ongoing habit of mentoring other designers, Ian spoke to that shift from the
+                vantage point of someone who works with these tools professionally, alongside a
+                broader conversation about how AI was showing up for the community more generally.
               </p>
 
               <p>

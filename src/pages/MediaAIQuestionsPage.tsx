@@ -95,27 +95,29 @@ export default function MediaAIQuestionsPage() {
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
                 INCRadio DZEM954 is the YouTube presence of INC Radio (DZEM 954), the broadcast
-                arm connected to the Iglesia ni Cristo community, which also runs a Silicon
-                Valley, California satellite studio producing local segments for the Bay Area
-                community. This particular segment, titled "A.I. Questions Answered," brought
-                Ian in as a guest to help field questions about artificial intelligence in a
-                format aimed at a general, non-technical audience.
+                arm connected to the Iglesia ni Cristo community. Its Silicon Valley satellite
+                studio produces regular live segments for INC congregations across the wider Bay
+                Area and Central Coast — the station's own broadcast tags for this segment list
+                San Jose, Redwood City, Fremont, Milpitas, Salinas, Monterey, and Gilroy among the
+                communities it reaches.
               </p>
 
               <p>
-                Given the segment's title and format, the conversation centered on answering the
-                kinds of practical questions everyday viewers have about AI — what these tools
-                actually are, how people are starting to use them, and what to make of the rapid
-                pace of change. Ian's day-to-day work as a UX designer at Google Cloud, plus his
-                ongoing UX mentoring, made him a natural fit to speak to how AI tools intersect
-                with product design and everyday work.
+                This particular segment aired live on Friday, April 18, 2025, structured as an
+                open Q&amp;A: per the station's own description, it was framed as a chance to
+                "discuss how we use A.I. and answer some questions the brethren had about it" —
+                i.e. congregation members had submitted real questions about artificial
+                intelligence ahead of time, and the broadcast worked through them live rather than
+                following a scripted interview format. Ian joined as a guest to help field those
+                questions, bringing the perspective of someone who works with AI-adjacent tools
+                professionally as a UX designer at Google Cloud, alongside his ongoing UX
+                mentoring work outside of it.
               </p>
 
               <p>
-                This page summarizes the segment rather than reproducing it. The broadcast itself
-                is owned by INCRadio DZEM954, so for the full discussion — including whatever
-                specific questions and answers came up — the video embedded above and the link to
-                YouTube are the best source.
+                This page summarizes the segment rather than reproducing it — the broadcast itself
+                is owned by INCRadio DZEM954. For the actual questions asked and how they were
+                answered, the video embedded above (or the YouTube link below) is the real source.
               </p>
             </div>
           </motion.div>
