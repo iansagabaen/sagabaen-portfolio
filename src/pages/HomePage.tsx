@@ -700,42 +700,79 @@ export default function HomePage() {
             </motion.div>
           </div>
 
-          {/* Podcast Feature - Full Width Card */}
-          <motion.div
-            {...fadeUp}
-            className="mt-16 p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex flex-col md:flex-row gap-8 items-center"
-          >
-            {/* Podcast Graphic */}
-            <Link
-              to="/podcast"
-              className="group flex-shrink-0 overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300 w-48 h-48"
-            >
-              <img
-                src="/images/1747897015528.jpeg"
-                alt="Roots: Episode 89 - International Man of Mystery featuring Ian Sagabaen"
-                className="w-full h-full object-cover group-hover:opacity-90 transition-opacity duration-300"
-                loading="lazy"
-              />
-            </Link>
-
-            {/* Text Content */}
-            <div className="flex-1 min-w-0 w-full flex flex-col justify-center items-center md:items-start gap-4 text-center md:text-left">
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block mb-3">
-                  Featured
-                </p>
-                <p className="text-stone-300 leading-relaxed text-sm">
-                  I was featured on <span className="font-semibold text-stone-100">Roots: A Podcast on Filipino Designers</span>, where I talked about my journey from being the quiet kid from San Jose, to studying abroad in Japan, to building my practice across Silicon Valley tech companies. The episode covers design thinking, overcoming imposter syndrome, and why constraint-based design matters.
-                </p>
-              </div>
-              <Link
-                to="/podcast"
-                className="px-6 py-2 bg-amber-400 text-stone-950 text-sm font-bold rounded-full hover:bg-amber-300 transition-colors duration-200 w-fit inline-flex items-center gap-2"
+          {/* In the Media - Featured Appearances */}
+          <div className="mt-16 space-y-6">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400/70 font-semibold block">
+              In the Media
+            </p>
+            {[
+              {
+                to: '/podcast',
+                image: '/images/1747897015528.jpeg',
+                alt: 'Roots: Episode 89 - International Man of Mystery featuring Ian Sagabaen',
+                description: (
+                  <>
+                    I was featured on <span className="font-semibold text-stone-100">Roots: A Podcast on Filipino Designers</span>, where I talked about my journey from being the quiet kid from San Jose, to studying abroad in Japan, to building my practice across Silicon Valley tech companies. The episode covers design thinking, overcoming imposter syndrome, and why constraint-based design matters.
+                  </>
+                ),
+                cta: 'Read transcript'
+              },
+              {
+                to: '/press/ai-questions-answered',
+                image: 'https://i.ytimg.com/vi/XZMOGfboVLM/hqdefault.jpg',
+                alt: 'A.I. Questions Answered - INCRadio DZEM954 Silicon Valley Satellite Studio featuring Ian Sagabaen',
+                description: (
+                  <>
+                    I joined <span className="font-semibold text-stone-100">INCRadio DZEM954's Silicon Valley satellite studio</span> for a segment called "A.I. Questions Answered," fielding everyday questions about artificial intelligence for a general audience.
+                  </>
+                ),
+                cta: 'Read summary'
+              },
+              {
+                to: '/press/how-we-use-ai',
+                image: 'https://i.ytimg.com/vi/ZWHXCgcPTP0/hqdefault.jpg',
+                alt: 'How We Use A.I. - INCRadio DZEM954 Silicon Valley featuring Ian Sagabaen',
+                description: (
+                  <>
+                    On <span className="font-semibold text-stone-100">INCRadio DZEM954's "How We Use A.I."</span> segment (aired March 22, 2025), I talked about how everyday people and businesses were beginning to fold AI tools into daily work.
+                  </>
+                ),
+                cta: 'Read summary'
+              }
+            ].map((item) => (
+              <motion.div
+                key={item.to}
+                {...fadeUp}
+                className="p-8 bg-stone-800/50 border border-stone-700/60 rounded-3xl flex flex-col md:flex-row gap-8 items-center"
               >
-                Read transcript <ArrowUpRight size={14} />
-              </Link>
-            </div>
-          </motion.div>
+                {/* Thumbnail */}
+                <Link
+                  to={item.to}
+                  className="group flex-shrink-0 overflow-hidden rounded-2xl border border-stone-700/40 hover:border-amber-400/40 transition-colors duration-300 w-48 h-48"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className="w-full h-full object-cover group-hover:opacity-90 transition-opacity duration-300"
+                    loading="lazy"
+                  />
+                </Link>
+
+                {/* Text Content */}
+                <div className="flex-1 min-w-0 w-full flex flex-col justify-center items-center md:items-start gap-4 text-center md:text-left">
+                  <p className="text-stone-300 leading-relaxed text-sm">
+                    {item.description}
+                  </p>
+                  <Link
+                    to={item.to}
+                    className="px-6 py-2 bg-amber-400 text-stone-950 text-sm font-bold rounded-full hover:bg-amber-300 transition-colors duration-200 w-fit inline-flex items-center gap-2"
+                  >
+                    {item.cta} <ArrowUpRight size={14} />
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
