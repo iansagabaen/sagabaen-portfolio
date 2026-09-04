@@ -79,6 +79,10 @@ export default function MediaHowWeUseAIPage() {
           <motion.div {...fadeUp} className="space-y-4">
             <h2 className="text-2xl font-semibold text-stone-100">Summary</h2>
             <p className="text-sm text-stone-400">Station: INCRadio DZEM954 · Aired March 22, 2025</p>
+            <p className="text-sm text-stone-400 italic">
+              A recap of my segment, in my own words, not a full transcript. Watch the video above
+              for the whole conversation.
+            </p>
           </motion.div>
 
           <motion.div {...fadeUp} className="w-full aspect-video rounded-2xl overflow-hidden border border-stone-800">
@@ -94,72 +98,99 @@ export default function MediaHowWeUseAIPage() {
           <motion.div {...fadeUp} className="space-y-6 prose prose-invert max-w-none">
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-                This earlier segment set up the AI conversation from scratch for INCRadio
-                DZEM954's Silicon Valley audience, hosted by Brother Miguel alongside Sister Jill
-                Navasta and Brother Gleen (from the Salinas congregation), with Ian joining as a
-                newer panelist. He introduced himself as someone born and raised in Silicon
-                Valley, a design graduate, and working full-time in UX design at a major tech
-                company — professionally immersed in AI tools as part of his day-to-day work,
-                which was the reason he was there to help demystify the topic for an audience
-                that, by his own read, ranged from curious to genuinely wary of it.
+                This earlier segment introduced AI from scratch for the district. Brother Miguel
+                hosted alongside Sister Jill Navasca and Brother Glian from the Salinas
+                congregation, and I joined as a newer panelist. I gave a quick introduction: born
+                and raised in Silicon Valley, a design degree, and a full-time UX design job at a
+                big tech company, where I work with AI tools constantly. That's really why I was
+                there, to help make the technology feel less intimidating for people who were
+                curious but understandably wary of it.
               </p>
 
-              <p>
-                Asked to explain AI in plain terms, he reached for an analogy: a child who's told
-                directions once, then adjusts their own behavior the next time based on what they
-                learned from that experience — AI systems work on a similar principle, picking up
-                on patterns over repeated exposure (his example was a smart device that starts
-                noticing you make coffee at 6:45 every morning and eventually anticipates it). On
-                why AI suddenly felt like a mainstream "hot topic" rather than something brand
-                new, his own read was two-fold: the underlying computing hardware got cheaper and
-                more efficient, and — speaking as a UX designer — the tools themselves finally
-                became approachable and user-friendly rather than intimidatingly technical, which
-                is why so many companies rushed to build things like AI image generation into
-                ordinary products.
-              </p>
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">What AI Actually Is</h3>
 
               <p>
-                His stated top tip, repeated more than once, was to treat AI as a tool for a first
-                draft, not a finished answer: his own workflow is prompting it for a starting
-                point on a document, then reviewing, correcting, and rewriting the result in his
-                own voice — which he said is the real reason colleagues sometimes ask how he turns
-                work around so quickly. He was candid about the ethical tension this creates,
-                especially for students using AI to fully write essays or exams instead of doing
-                the work themselves: his position is that whoever's name is attached to a piece of
-                work is accountable for it regardless of what tool helped make it, so reviewing
-                and owning the final result isn't optional. He offered a personal, unglamorous
-                example of the "good" use of that same instinct — using an AI tool late at night
-                to help parse dense HOA legal paperwork when he was too mentally fatigued to get
-                through it himself, treating the AI's summary as a starting point to sanity-check
-                rather than a final answer.
+                When I was asked to define AI in plain terms, I used the analogy of a child
+                learning directions: you tell them once, and they adjust their behavior next time
+                based on what they picked up. AI works on a similar principle, learning from
+                patterns over repeated exposure. My example was a smart device that starts
+                noticing you make coffee at 6:45 every morning and eventually starts anticipating
+                it for you.
               </p>
 
-              <p>
-                On keeping AI use in check, his framing was to keep using it, but respectfully —
-                not for scams, cheating, or harmful content — and to stay mindful that AI tools
-                learn from how people use them, so misuse or bad-faith prompting doesn't stay
-                isolated to one interaction. Asked how to tell real information from
-                AI-generated misinformation or deepfakes, his advice was to trust the same
-                instincts people already use to spot other scams — an AI tool that cites its
-                actual sources is safer to rely on than one that doesn't, and anything that
-                already feels "off," like a celebrity seemingly promoting cryptocurrency, deserves
-                the same skepticism as any other scam. He agreed with a viewer's comment that AI's
-                value in healthcare — helping doctors and nurses move faster for patients — was an
-                underrated example next to flashier uses like image generation, and shared that
-                he's personally used AI as a low-stakes sounding board to talk through a problem
-                out loud, saying that typing it out and getting objective follow-up questions back
-                (with none of a person's built-in bias) sometimes helped him think an issue
-                through further than he would have alone. Asked for his single favorite everyday
-                use of AI, he landed on something practical: role-playing a tense email exchange
-                with an AI tool before sending it — asking it to respond in the voice of the
-                actual recipient (in his example, a neighbor in his HOA) — as a way to catch an
-                overly raw or "stern" tone before it goes out.
-              </p>
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Why AI Suddenly Felt Like a Big Deal</h3>
 
               <p>
-                This page is a summary, not a transcript. The full segment — including the
-                specific examples and back-and-forth discussion — belongs to INCRadio DZEM954 and
-                is best experienced via the embedded video above or the YouTube link.
+                Someone asked why AI seemed to explode into the mainstream so suddenly, and my
+                honest take is two things. First, the underlying technology got cheaper and more
+                efficient. Second, and this is the UX designer in me talking, the tools themselves
+                finally became user friendly. AI used to feel intimidatingly technical, and now it
+                doesn't, which is exactly why every company is racing to build things like image
+                generation into their products.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">How I Actually Use It</h3>
+
+              <p>
+                My top tip, which I probably repeated more than once that night, was "use it as a
+                tool, not at face value." My own workflow is asking it for a first draft, whether
+                that's a document or an email, then reviewing it, correcting what's off, and
+                rewriting it in my own voice. That's honestly the reason people ask me how I get
+                things done so fast. I also talked about the ethical side of that, especially for
+                students using AI to write entire essays or exams instead of doing the work
+                themselves. My take is that your name is attached to whatever you submit, so
+                you're still accountable for it no matter what tool helped you get there. I gave a
+                pretty unglamorous example of using it well: reviewing HOA legal documents at 11pm
+                when my brain was fried, dropping a screenshot into Gemini and asking it to help me
+                understand what I was actually looking at. It's a great starting point, but I still
+                had to do the work of understanding it myself.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Staying Within Limits</h3>
+
+              <p>
+                On keeping AI use in check, my stance is simple: keep using it, but be a good
+                citizen about it. Don't use it to scam people or cheat. It's worth remembering that
+                AI learns from how we use it, so being careless or malicious with it doesn't stay
+                contained to just that one interaction. On spotting misinformation or deepfakes, my
+                advice is to trust your gut the same way you would with any other scam: check your
+                sources, and tools like Gemini or ChatGPT will actually tell you where their
+                information comes from if you ask. If something feels off, like a celebrity
+                suddenly promoting cryptocurrency, treat it the same way you would any other red
+                flag.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Where AI Genuinely Helps</h3>
+
+              <p>
+                I really liked a comment from the chat about AI in healthcare, helping doctors and
+                nurses move faster for patients. That's an underrated use case compared to flashier
+                stuff like image generation. I also shared that I've used AI as a sounding board
+                for talking through a problem, typing it out and getting objective follow up
+                questions back with none of the bias a person might bring. It's helped me think
+                things through further than I would have on my own, though obviously it's not a
+                replacement for real help when something is actually serious.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">My Favorite Everyday Use</h3>
+
+              <p>
+                When we wrapped up, I was asked for my favorite everyday use of AI, and mine is
+                pretty practical. Before sending a tense email, I'll ask it to respond as if it
+                were the other person, so I can catch myself before I send something too raw. I've
+                used that with my HOA neighbors more than once.
               </p>
             </div>
           </motion.div>

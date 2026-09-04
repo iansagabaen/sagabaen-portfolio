@@ -79,6 +79,10 @@ export default function MediaAIQuestionsPage() {
           <motion.div {...fadeUp} className="space-y-4">
             <h2 className="text-2xl font-semibold text-stone-100">Summary</h2>
             <p className="text-sm text-stone-400">Station: INCRadio DZEM954 · Aired April 18, 2025</p>
+            <p className="text-sm text-stone-400 italic">
+              A recap of my segment, in my own words, not a full transcript. Watch the video above
+              for the whole conversation.
+            </p>
           </motion.div>
 
           <motion.div {...fadeUp} className="w-full aspect-video rounded-2xl overflow-hidden border border-stone-800">
@@ -94,67 +98,101 @@ export default function MediaAIQuestionsPage() {
           <motion.div {...fadeUp} className="space-y-6 prose prose-invert max-w-none">
             <div className="space-y-4 text-sm leading-relaxed">
               <p>
-                This episode was a live, audience-driven Q&amp;A: it followed up on questions from
-                the station's earlier "How We Use A.I." broadcast that didn't get answered on air,
-                plus fresh ones from that night's chat. Hosts Brother Gleon and Sister Jill
-                Navasta, from the Redwood City congregation, were joined again by Ian, introduced
-                to the audience as a UX designer at a major tech company, a career mentor, and a
-                father — there specifically to help field the community's AI questions in plain,
-                non-technical language.
+                This episode was a live Q&amp;A. Brother Gleon and Sister Jill Navasca hosted
+                again from the Redwood City congregation, and I joined them to help answer AI
+                questions we didn't get to on our last broadcast, along with new ones from that
+                night's chat.
               </p>
 
-              <p>
-                On whether AI threatens jobs, Ian argued the more accurate framing is augmentation
-                rather than replacement: grocery-store self-checkout was his go-to example, where
-                the repetitive task automated away but staff shifted toward higher-level
-                troubleshooting and support rather than disappearing outright (though he noted
-                some retailers have gone fully cashier-less). A related listener question — who
-                owns a photo or image an AI tool generates — led him into copyright territory:
-                under current US law, purely AI-generated output generally isn't something you can
-                claim ownership over and functions closer to public domain, though what you're
-                allowed to do with it can still depend on the specific AI tool's own license
-                terms. He was upfront that he isn't a lawyer and that this area of law is moving
-                fast, and offered a rule of thumb from his design-school background instead: treat
-                AI output as a rough first draft to build on top of, not a finished product, and
-                lean on how much of the final result is genuinely your own editing and judgment.
-              </p>
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">On AI and Jobs</h3>
 
               <p>
-                Asked about the risk of feeding AI tools sensitive information — including
-                anything church-related — his answer was direct: treat anything typed into an AI
-                tool as effectively public the moment you submit it, since there's no real way to
-                pull it back out once it's absorbed into the system. That "it's learning from what
-                you feed it" idea ran through the episode as a broader caution. On where AI is
-                already doing real work day to day, he pointed past the obvious chatbot examples
-                to things like spam filtering, medical chart and imaging review (which he said AI
-                already handles with high reported confidence), and turn-by-turn mapping and
-                directions — the kind of task that used to mean pulling a paper map out of the
-                glovebox. He also shared a personal use case from his time living in Japan: using
-                an AI chat tool to help him rehearse a formal, apologetic way to explain a problem
-                to a train station attendant in Japanese, breaking the phrase down piece by piece.
+                One of the first questions was about the downside of AI, and job loss is a real,
+                legitimate concern. But I think the better way to look at it is augmentation, not
+                replacement. Self-checkout at the grocery store is the example I keep coming back
+                to: the repetitive task got automated, but you still need people there for the
+                moments when something breaks and someone has to troubleshoot it, and those staff
+                get to do higher-level work instead. Some places have gone fully cashierless now,
+                but for a lot of jobs, AI is shifting what people spend their time on rather than
+                eliminating them outright.
               </p>
 
-              <p>
-                On whether AI will eventually replace design work specifically — his own field —
-                he said "eventually," and admitted the pace might be faster than he originally
-                expected, possibly within the next couple of years. For now, though, he described
-                using AI mainly as a sounding board to pressure-test ideas rather than to generate
-                final work outright, which he credited for a real jump in his own productivity. He
-                backed that up with a real-world example: an ad campaign built entirely by AI —
-                concept and animation both — that drew public backlash for feeling generic and
-                soulless, which he read as proof that human judgment and individuality still
-                matter in creative work AI can't easily replicate. On separating good AI answers
-                from confidently wrong ones, his practical test is spot-checking AI on questions
-                he already knows the answer to; in his experience it's right most of the time, but
-                when it's wrong, it can be wrong in a way that sounds just as confident — so his
-                standing advice, repeated throughout the episode, was to keep using AI, but always
-                verify rather than take any single answer at face value.
-              </p>
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Who Owns What AI Creates</h3>
 
               <p>
-                This page summarizes the segment rather than reproducing it — the broadcast itself
-                is owned by INCRadio DZEM954. For the actual questions asked and how they were
-                answered, the video embedded above (or the YouTube link below) is the real source.
+                Someone asked who actually owns a photo or image an AI tool generates, and I
+                looked that one up beforehand because I didn't want to get it wrong. Under current
+                US law, you don't own the copyright on something purely AI generated. It functions
+                more like public domain, though what you're allowed to do with it can still depend
+                on the specific tool's license. My advice, which I keep coming back to, is "don't
+                use it at face value, use it as a launching point to something bigger." I'll ask it
+                a prompt and it gets me maybe 60% of the way there, and that's the point where I
+                take over and build on it myself. I'm not a lawyer, so I can't tell you the exact
+                threshold where something becomes truly your own work, but from my design school
+                background, the rule of thumb used to be around 80% original before you could call
+                a layout genuinely yours. The law is still catching up to the technology, so my
+                advice is to do your own homework and stay cautious.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Privacy and Sharing Information</h3>
+
+              <p>
+                We also got a question about the security implications of asking AI tools about
+                church information specifically. My answer was direct: treat anything you type
+                into an AI tool as if it becomes public the moment you submit it, because there's
+                no pulling it back out once it's in there. Whether it's church information or
+                anything else you'd consider private, just be mindful of what you're inputting,
+                since it's there for good.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Where AI Already Does Real Work</h3>
+
+              <p>
+                Beyond the obvious chatbot use cases, I talked through a few places AI is already
+                handling real tasks: spam filtering, reading medical charts and X-rays with high
+                reported confidence, and mapping and directions, the kind of thing that used to
+                mean pulling a paper map out of your glovebox. I also shared a personal one from my
+                year in Japan, using AI to help me rehearse a formal, apologetic way to explain a
+                problem to a train station attendant, breaking the phrase down so I could actually
+                get it right.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Will AI Replace Design Jobs?</h3>
+
+              <p>
+                My cousin Marlin asked whether AI will eventually replace design work, which hits
+                close to home since that's my day job. My honest answer was "eventually," and
+                probably sooner than I originally expected, maybe within the next couple of years.
+                Right now though, I use it to augment my workload, mostly as a sounding board to
+                validate ideas I'm already building, not to generate finished work outright. I'll
+                ask it to lay out a feature and it gives me the structure in text, but I'm still
+                the one translating that into an actual interface with real buttons and layout. I
+                also brought up a recent ad campaign where the concept and animation were entirely
+                AI generated. It fell flat and drew real backlash for feeling soulless, which to me
+                proves the human individuality that makes something stand out is exactly what AI
+                still can't replicate.
+              </p>
+
+              <hr className="border-stone-700 my-8" />
+
+              <h3 className="text-lg font-semibold text-stone-100 mt-8">Telling Real Answers From Hallucinations</h3>
+
+              <p>
+                The last question was about telling when AI is hallucinating versus giving you the
+                right answer, which comes up constantly. My method is simple: test it on things you
+                already know the answer to. In my experience it's right about 70% of the time, but
+                when it's wrong, it can be confidently, badly wrong. So my standing advice is to
+                keep using it, but scrutinize everything and never take an answer at face value.
               </p>
             </div>
           </motion.div>
